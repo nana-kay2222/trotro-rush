@@ -1,4 +1,4 @@
-# Trotro Rush
+# Trotro Rush - a moblie ghanain game
 
 ![Trotro Rush](docs/images/cover.png)
 
