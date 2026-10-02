@@ -1,0 +1,2592 @@
+{
+ "_comment": "Prioritized generation plan (see docs/ASSET_AUDIT.md). Lower priority number = generated first. 'split' cuts a sheet into N equal columns. 'reference' = existing image sent to the edit endpoint for style/subject consistency. Quality is ALWAYS config.quality (low); jobs cannot override it.",
+ "style": "Stylised semi-realistic game sprite in the same painted-3D-render style as a modern mobile driving game. Bright West African daylight, clean readable silhouette, crisp edges. Isolated single subject(s) on a perfectly flat solid magenta (#FF00FF) background, no ground, no cast shadow, no scenery, no text, no watermark, no brand logos.",
+ "jobs": [
+  {
+   "id": "hawkers_sheet",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1536x1024",
+   "split": 3,
+   "prompt": "Three Ghanaian street hawkers walking between cars in Accra traffic, each full body, facing the viewer at a slight angle, mid-stride. Left: a young woman carrying a large round tray of pure water sachets on her head, wearing a colourful wrapper. Middle: a teenage boy holding up a stack of wrapped bread loaves, wearing a faded t-shirt and shorts. Right: a woman balancing a glass box of plantain chips on her head, wearing a bright headwrap and apron. Evenly spaced in three equal columns, same scale, feet on the same baseline.",
+   "outputs": [
+    "assets/characters/hawker_water.png",
+    "assets/characters/hawker_bread.png",
+    "assets/characters/hawker_chips.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Go-slow jam and market stretch"
+  },
+  {
+   "id": "police_officer_sheet",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1536x1024",
+   "split": 2,
+   "prompt": "Two poses of the same Ghana Police MTTD traffic officer standing at a roadside checkpoint, full body, facing the viewer: white short-sleeve uniform shirt with epaulettes, black trousers, white cap, bright reflective vest, black boots. Left: waving drivers through with a big sweeping arm gesture. Right: holding one palm up flat signalling STOP and pointing to the roadside with the other hand. Two equal columns, same scale, feet on the same baseline.",
+   "outputs": [
+    "assets/characters/police_officer_wave.png",
+    "assets/characters/police_officer_stop.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Police checkpoint"
+  },
+  {
+   "id": "market_stalls_sheet",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1536x1024",
+   "split": 3,
+   "prompt": "Three separate Ghanaian roadside market stalls as game billboard sprites, front view: left a wooden table piled with tomatoes, peppers and onions under a big faded red-and-white beach umbrella with a market woman seated behind it; middle a rack of colourful second-hand clothes (obroni wawu) with a vendor; right a small yellow wooden kiosk with an 'MoMo' mobile money sign and phone credit cards hanging. Evenly spaced in three equal columns, bases on the same baseline.",
+   "outputs": [
+    "assets/props/stall_vegetables.png",
+    "assets/props/stall_clothes.png",
+    "assets/props/stall_momo.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Market stretch"
+  },
+  {
+   "id": "trotro_mate",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1024x1024",
+   "prompt": "A young Ghanaian trotro 'mate' (bus conductor) leaning far out sideways from an open minibus side door, seen from BEHIND and slightly to the side as if from a car following the minibus. One hand grips the door frame (the minibus itself is NOT drawn), his body leans out to the right, the other arm is raised high waving a small fan of Ghana cedi notes, mouth open shouting. He wears a bright football jersey, jeans and a cap worn backwards. Full body, dynamic pose.",
+   "outputs": [
+    "assets/characters/trotro_mate.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Mate flavour on the player trotro"
+  },
+  {
+   "id": "rival_b_rear",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro/rival_trotro_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same minibus model, camera angle, roof rack with luggage, proportions and painted-render style as the reference image, but a DIFFERENT rival trotro livery: deep maroon-red body with a cream roof and a horizontal red-gold-green Ghana-flag stripe along the lower body, and the slogan 'SEA NEVER DRY' in bold white letters across the top of the rear window. Yellow Ghanaian number plate GR 7731-23. Flat magenta background, no shadow, no ground.Viewed from directly behind and slightly above. Whole vehicle visible, centred. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Second rival livery (owner asked for variety)"
+  },
+  {
+   "id": "rival_b_left_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png",
+   "size": "1024x1024",
+   "prompt": "The same maroon-and-cream 'SEA NEVER DRY' trotro as in the reference image (identical livery, slogan, roof rack, number plate and style). Viewpoint rotated about 15 degrees to the vehicle's left: mostly the rear plus a thin sliver of the LEFT side. Whole vehicle visible, centred. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Second rival livery (owner asked for variety)"
+  },
+  {
+   "id": "rival_b_right_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png",
+   "size": "1024x1024",
+   "prompt": "The same maroon-and-cream 'SEA NEVER DRY' trotro as in the reference image (identical livery, slogan, roof rack, number plate and style). Viewpoint rotated about 15 degrees to the vehicle's right: mostly the rear plus a thin sliver of the RIGHT side. Whole vehicle visible, centred. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Second rival livery (owner asked for variety)"
+  },
+  {
+   "id": "rival_b_left_rear_3q",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png",
+   "size": "1024x1024",
+   "prompt": "The same maroon-and-cream 'SEA NEVER DRY' trotro as in the reference image (identical livery, slogan, roof rack, number plate and style). Seen from behind-left at about 40 degrees: the rear and the LEFT side. Whole vehicle visible, centred. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_left_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Second rival livery (owner asked for variety)"
+  },
+  {
+   "id": "rival_b_right_rear_3q",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png",
+   "size": "1024x1024",
+   "prompt": "The same maroon-and-cream 'SEA NEVER DRY' trotro as in the reference image (identical livery, slogan, roof rack, number plate and style). Seen from behind-right at about 40 degrees: the rear and the RIGHT side. Whole vehicle visible, centred. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_right_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Second rival livery (owner asked for variety)"
+  },
+  {
+   "id": "ui_icons_a",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1536x1024",
+   "style": "Glossy, bold, high-contrast mobile game UI icon in a vibrant cartoon style with a thick dark outline and soft highlights, like a top casual racing game. Each icon on its own, perfectly centred in its column, same size and style. Flat magenta background, no text, no letters, no numbers.",
+   "split": 3,
+   "prompt": "Three game UI icons side by side in three equal columns: left a shiny gold coin with a Ghana cedi currency mark embossed on it; middle a red heart with a small silver wrench across it (vehicle health); right a friendly passenger figure silhouette waving one arm, in bright yellow.",
+   "outputs": [
+    "assets/ui/icon_coin.png",
+    "assets/ui/icon_health.png",
+    "assets/ui/icon_passenger.png"
+   ],
+   "max_size": 256,
+   "needed_by": "HUD"
+  },
+  {
+   "id": "ui_icons_b",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1536x1024",
+   "style": "Glossy, bold, high-contrast mobile game UI icon in a vibrant cartoon style with a thick dark outline and soft highlights, like a top casual racing game. Each icon on its own, perfectly centred in its column, same size and style. Flat magenta background, no text, no letters, no numbers.",
+   "split": 3,
+   "prompt": "Three game UI icons side by side in three equal columns: left a small cute yellow-and-blue Ghanaian trotro minibus seen from the side with luggage on the roof; middle a speedometer gauge with the needle in the red zone; right a bright orange warning triangle with an exclamation mark shape.",
+   "outputs": [
+    "assets/ui/icon_trotro.png",
+    "assets/ui/icon_speed.png",
+    "assets/ui/icon_warning.png"
+   ],
+   "max_size": 256,
+   "needed_by": "HUD"
+  },
+  {
+   "id": "van_right_rear_slight_v2",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/van/van_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same black van as in the reference image (identical model, colours, number plate; NO roof rack, NO luggage, plain roof exactly like the reference), but the viewpoint is rotated about 15 degrees to the vehicle's right: we still see mostly the rear, plus a thin sliver of the vehicle's RIGHT side. Viewed from slightly above and behind. Whole vehicle visible, centred, filling most of the frame. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/van/van_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "v1 invented a roof rack"
+  },
+  {
+   "id": "tex_asphalt_accra",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1024x1024",
+   "kind": "texture",
+   "tileable": true,
+   "background": "opaque",
+   "style": "Realistic game texture, perfectly top-down orthographic view, flat even overcast lighting, no cast shadows, no perspective, no objects, no text, no watermark. Fills the entire frame edge to edge.",
+   "prompt": "Seamless worn asphalt road surface from a busy road in Accra, Ghana: sun-bleached medium-grey tarmac with visible stone aggregate, darker patched tar repairs, fine hairline cracks, faint oil stains and dusty reddish-brown grime. No road markings, no lines.",
+   "outputs": [
+    "assets/environment/asphalt_accra.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Road surface (markings are painted on locally)"
+  },
+  {
+   "id": "tex_ground_dust",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1024x1024",
+   "kind": "texture",
+   "tileable": true,
+   "background": "opaque",
+   "style": "Realistic game texture, perfectly top-down orthographic view, flat even overcast lighting, no cast shadows, no perspective, no objects, no text, no watermark. Fills the entire frame edge to edge.",
+   "prompt": "Seamless ground texture of a dusty urban roadside in Accra, Ghana: compacted grey-brown dirt and fine sand with small pebbles, faint footpaths, scattered tufts of dry yellow-green grass and a few small weeds. Muted, dusty, NOT bright red, not orange.",
+   "outputs": [
+    "assets/environment/ground_dust.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Replaces the bright red laterite everywhere"
+  },
+  {
+   "id": "tex_pavement_slabs",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1024x1024",
+   "kind": "texture",
+   "tileable": true,
+   "background": "opaque",
+   "style": "Realistic game texture, perfectly top-down orthographic view, flat even overcast lighting, no cast shadows, no perspective, no objects, no text, no watermark. Fills the entire frame edge to edge.",
+   "prompt": "Seamless texture of a dusty, slightly cracked concrete pedestrian walkway made of square grey concrete slabs, as found beside roads in Accra, with dust in the joints and a few stains.",
+   "outputs": [
+    "assets/environment/pavement_slabs.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Walkway between road drain and buildings"
+  },
+  {
+   "id": "skyline_accra",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1536x1024",
+   "style": "Soft painterly game background, atmospheric haze, muted blue-grey distant tones. Flat magenta (#FF00FF) everywhere above the skyline and nothing below the base line.",
+   "prompt": "A wide, low distant skyline of Accra, Ghana seen far away across town: mostly low-rise and a few mid-rise buildings, black polytank water tanks on roofs, a telecom mast, scattered palm trees and a distant hill. Everything is hazy and blue-grey from harmattan dust. The skyline occupies only the lower third of the image as a continuous band spanning the full width, flat bottom edge.",
+   "outputs": [
+    "assets/environment/skyline_accra.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Distant horizon instead of empty desert edge"
+  },
+  {
+   "id": "bld_pharmacy_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/pharmacy.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/pharmacy_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_pharmacy_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/pharmacy.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/pharmacy_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_compound_house_large_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/compound_house_large.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/compound_house_large_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_compound_house_large_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/compound_house_large.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/compound_house_large_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_provision_shop_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/provision_shop.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/provision_shop_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_provision_shop_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/provision_shop.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/provision_shop_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_long_shop_row_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/long_shop_row.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/long_shop_row_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_long_shop_row_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/long_shop_row.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/long_shop_row_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_chop_bar_local_food_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/chop_bar_local_food.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/chop_bar_local_food_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_chop_bar_local_food_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/chop_bar_local_food.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/chop_bar_local_food_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_telecom_electronics_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/telecom_electronics.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/telecom_electronics_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_telecom_electronics_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/telecom_electronics.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/telecom_electronics_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_momo_stall_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/momo_stall.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/momo_stall_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_momo_stall_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/momo_stall.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/momo_stall_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_drinking_spot_pub_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/drinking_spot_pub.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/drinking_spot_pub_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_drinking_spot_pub_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/drinking_spot_pub.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/drinking_spot_pub_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_mechanic_auto_shop_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/mechanic_auto_shop.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/mechanic_auto_shop_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_mechanic_auto_shop_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/mechanic_auto_shop.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/mechanic_auto_shop_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_commercial_block_two_storey_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/commercial_block_two_storey.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/commercial_block_two_storey_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_commercial_block_two_storey_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/commercial_block_two_storey.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/commercial_block_two_storey_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_commercial_block_two_storey_alt_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/commercial_block_two_storey_alt.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/commercial_block_two_storey_alt_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_commercial_block_two_storey_alt_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/commercial_block_two_storey_alt.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/commercial_block_two_storey_alt_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_compound_house_small_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/compound_house_small.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/compound_house_small_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_compound_house_small_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/compound_house_small.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/compound_house_small_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_compound_house_large_alt_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/compound_house_large_alt.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/compound_house_large_alt_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_compound_house_large_alt_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/compound_house_large_alt.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/compound_house_large_alt_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_unfinished_concrete_building_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/unfinished_concrete_building.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/unfinished_concrete_building_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_unfinished_concrete_building_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/unfinished_concrete_building.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/unfinished_concrete_building_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_church_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/church.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/church_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_church_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/church.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/church_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_school_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/school.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/school_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_school_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/school.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/school_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_apartment_block_medium_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/apartment_block_medium.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/apartment_block_medium_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_apartment_block_medium_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/apartment_block_medium.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/apartment_block_medium_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_apartment_block_large_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/apartment_block_large.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/apartment_block_large_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_apartment_block_large_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/apartment_block_large.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/apartment_block_large_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "bld_roadside_market_structure_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/roadside_market_structure.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/roadside_market_structure_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Building kit: road-facing wall"
+  },
+  {
+   "id": "bld_roadside_market_structure_end",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/buildings/roadside_market_structure.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/roadside_market_structure_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Building kit: end wall facing oncoming traffic"
+  },
+  {
+   "id": "taxi_left_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/taxi/taxi_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, number plate, roof load and details), but the viewpoint is rotated about 15 degrees to the vehicle's left: we still see mostly the rear, plus a thin sliver of the vehicle's LEFT side. Viewed from slightly above and behind, as from a following car. Whole vehicle visible, centred, filling most of the frame. Keep the same painted-render style as the reference. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/taxi/taxi_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Correct view for cars one lane over (current 3/4 art is ~40 deg, far too wide)"
+  },
+  {
+   "id": "taxi_right_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/taxi/taxi_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, number plate, roof load and details), but the viewpoint is rotated about 15 degrees to the vehicle's right: we still see mostly the rear, plus a thin sliver of the vehicle's RIGHT side. Viewed from slightly above and behind, as from a following car. Whole vehicle visible, centred, filling most of the frame. Keep the same painted-render style as the reference. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/taxi/taxi_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Correct view for cars one lane over (current 3/4 art is ~40 deg, far too wide)"
+  },
+  {
+   "id": "sedan_left_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/sedan/sedan_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, number plate, roof load and details), but the viewpoint is rotated about 15 degrees to the vehicle's left: we still see mostly the rear, plus a thin sliver of the vehicle's LEFT side. Viewed from slightly above and behind, as from a following car. Whole vehicle visible, centred, filling most of the frame. Keep the same painted-render style as the reference. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/sedan/sedan_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Correct view for cars one lane over (current 3/4 art is ~40 deg, far too wide)"
+  },
+  {
+   "id": "sedan_right_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/sedan/sedan_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, number plate, roof load and details), but the viewpoint is rotated about 15 degrees to the vehicle's right: we still see mostly the rear, plus a thin sliver of the vehicle's RIGHT side. Viewed from slightly above and behind, as from a following car. Whole vehicle visible, centred, filling most of the frame. Keep the same painted-render style as the reference. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/sedan/sedan_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Correct view for cars one lane over (current 3/4 art is ~40 deg, far too wide)"
+  },
+  {
+   "id": "suv_left_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/suv/suv_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, number plate, roof load and details), but the viewpoint is rotated about 15 degrees to the vehicle's left: we still see mostly the rear, plus a thin sliver of the vehicle's LEFT side. Viewed from slightly above and behind, as from a following car. Whole vehicle visible, centred, filling most of the frame. Keep the same painted-render style as the reference. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/suv/suv_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Correct view for cars one lane over (current 3/4 art is ~40 deg, far too wide)"
+  },
+  {
+   "id": "suv_right_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/suv/suv_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, number plate, roof load and details), but the viewpoint is rotated about 15 degrees to the vehicle's right: we still see mostly the rear, plus a thin sliver of the vehicle's RIGHT side. Viewed from slightly above and behind, as from a following car. Whole vehicle visible, centred, filling most of the frame. Keep the same painted-render style as the reference. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/suv/suv_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Correct view for cars one lane over (current 3/4 art is ~40 deg, far too wide)"
+  },
+  {
+   "id": "pickup_left_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/pickup/pickup_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, number plate, roof load and details), but the viewpoint is rotated about 15 degrees to the vehicle's left: we still see mostly the rear, plus a thin sliver of the vehicle's LEFT side. Viewed from slightly above and behind, as from a following car. Whole vehicle visible, centred, filling most of the frame. Keep the same painted-render style as the reference. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/pickup/pickup_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Correct view for cars one lane over (current 3/4 art is ~40 deg, far too wide)"
+  },
+  {
+   "id": "pickup_right_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/pickup/pickup_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, number plate, roof load and details), but the viewpoint is rotated about 15 degrees to the vehicle's right: we still see mostly the rear, plus a thin sliver of the vehicle's RIGHT side. Viewed from slightly above and behind, as from a following car. Whole vehicle visible, centred, filling most of the frame. Keep the same painted-render style as the reference. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/pickup/pickup_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Correct view for cars one lane over (current 3/4 art is ~40 deg, far too wide)"
+  },
+  {
+   "id": "van_left_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/van/van_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, number plate, roof load and details), but the viewpoint is rotated about 15 degrees to the vehicle's left: we still see mostly the rear, plus a thin sliver of the vehicle's LEFT side. Viewed from slightly above and behind, as from a following car. Whole vehicle visible, centred, filling most of the frame. Keep the same painted-render style as the reference. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/van/van_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Correct view for cars one lane over (current 3/4 art is ~40 deg, far too wide)"
+  },
+  {
+   "id": "rival_trotro_left_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro/rival_trotro_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, number plate, roof load and details), but the viewpoint is rotated about 15 degrees to the vehicle's left: we still see mostly the rear, plus a thin sliver of the vehicle's LEFT side. Viewed from slightly above and behind, as from a following car. Whole vehicle visible, centred, filling most of the frame. Keep the same painted-render style as the reference. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/rival_trotro/rival_trotro_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Correct view for cars one lane over (current 3/4 art is ~40 deg, far too wide)"
+  },
+  {
+   "id": "rival_trotro_right_rear_slight",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro/rival_trotro_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, number plate, roof load and details), but the viewpoint is rotated about 15 degrees to the vehicle's right: we still see mostly the rear, plus a thin sliver of the vehicle's RIGHT side. Viewed from slightly above and behind, as from a following car. Whole vehicle visible, centred, filling most of the frame. Keep the same painted-render style as the reference. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/rival_trotro/rival_trotro_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Correct view for cars one lane over (current 3/4 art is ~40 deg, far too wide)"
+  },
+  {
+   "id": "passengers_hailing_a",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1536x1024",
+   "prompt": "Three different Ghanaian roadside passengers in Accra, each standing full-body and facing the viewer, each energetically waving one raised arm to hail a trotro minibus. Left: young man in a colourful short-sleeve print shirt and jeans. Middle: woman in a bright kente-pattern kaba and slit dress holding a handbag. Right: schoolboy in a brown-and-yellow Ghanaian school uniform with a backpack. Evenly spaced in three equal columns, same scale, feet at the same baseline, viewed from slightly above.",
+   "split": 3,
+   "outputs": [
+    "assets/characters/passenger_man_wave.png",
+    "assets/characters/passenger_woman_wave.png",
+    "assets/characters/passenger_student_wave.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Phase 2 (passengers & bus bays)"
+  },
+  {
+   "id": "pothole_decal",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1024x1024",
+   "prompt": "Top-down orthographic view of a single deep pothole in dark grey asphalt road: broken jagged asphalt edge, exposed red-brown laterite earth and loose gravel inside, a little muddy water at the bottom. The pothole is centred and fills about 70% of the frame; everything outside the broken asphalt edge is flat magenta.",
+   "outputs": [
+    "assets/environment/pothole_decal.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Phase 3 (potholes)"
+  },
+  {
+   "id": "vegetation_sheet_a",
+   "priority": 2,
+   "mode": "generate",
+   "size": "1536x1024",
+   "prompt": "Three separate tropical Ghanaian roadside plants as game billboard sprites, each full height from base to top: left a tall coconut palm tree, middle a plantain plant with broad torn leaves and a hanging bunch, right a leafy neem shade tree. Evenly spaced in three equal columns, bases at the same baseline, side view.",
+   "split": 3,
+   "outputs": [
+    "assets/vegetation/palm_tree.png",
+    "assets/vegetation/plantain.png",
+    "assets/vegetation/neem_tree.png"
+   ],
+   "max_size": 768,
+   "needed_by": "Replaces the crude cylinder/prism palms in road.tscn"
+  },
+  {
+   "id": "passengers_hailing_b",
+   "priority": 2,
+   "mode": "generate",
+   "size": "1536x1024",
+   "prompt": "Three different Ghanaian roadside passengers in Accra, each standing full-body facing the viewer and waving one raised arm to hail a trotro. Left: market woman carrying a large metal basin of goods on her head, wearing a colourful wrapper. Middle: older man in a smock (fugu) with a cloth bag. Right: young woman in office wear with a phone in her other hand. Evenly spaced in three equal columns, same scale, feet at the same baseline, viewed from slightly above.",
+   "split": 3,
+   "outputs": [
+    "assets/characters/passenger_headload_wave.png",
+    "assets/characters/passenger_elder_wave.png",
+    "assets/characters/passenger_office_wave.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Phase 2 variety"
+  },
+  {
+   "id": "okada_rear",
+   "priority": 2,
+   "mode": "generate",
+   "size": "1024x1024",
+   "prompt": "A red commuter motorbike (okada) with a Ghanaian rider in a helmet and a light jacket, seen from directly behind and slightly above, as if from a car following it. Yellow Ghanaian number plate with no readable brand. Centred, filling most of the frame.",
+   "outputs": [
+    "assets/vehicles/motorbike/motorbike_rear.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Traffic type listed in GAME_SPEC Â§11"
+  },
+  {
+   "id": "okada_left_rear_3q",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "assets/vehicles/motorbike/motorbike_rear.png",
+   "size": "1024x1024",
+   "prompt": "The same motorbike and rider as in the reference image, now seen from behind-left at about a 35 degree angle (we see the back and the rider's LEFT side), slightly above. Keep identical colours, helmet, clothing, number plate and style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/motorbike/motorbike_left_rear_3q.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Traffic view set (right view is made by mirroring this one locally, no extra generation)"
+  },
+  {
+   "id": "okada_right_rear_3q",
+   "priority": 2,
+   "mode": "edit",
+   "reference": "assets/vehicles/motorbike/motorbike_rear.png",
+   "size": "1024x1024",
+   "prompt": "The same motorbike and rider as in the reference image, now seen from behind-right at about a 35 degree angle (we see the back and the rider's RIGHT side), slightly above. Keep identical colours, helmet, clothing, number plate and style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/motorbike/motorbike_right_rear_3q.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Traffic view set (right view is made by mirroring this one locally, no extra generation)"
+  },
+  {
+   "id": "police_bike_rear",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1024x1024",
+   "prompt": "A Ghana Police Service MTTD traffic police motorbike: white motorbike with blue and white police markings and a blue light bar, ridden by a Ghanaian police officer in a white helmet and dark blue uniform with a reflective vest, seen from directly behind and slightly above. Centred, filling most of the frame.",
+   "outputs": [
+    "assets/vehicles/police_bike/police_bike_rear.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Phase 4 (police)"
+  },
+  {
+   "id": "police_bike_left_rear_3q",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/police_bike/police_bike_rear.png",
+   "size": "1024x1024",
+   "prompt": "The same police motorbike and officer as in the reference image, now seen from behind-left at about a 35 degree angle (we see the back and the LEFT side), slightly above. Keep identical colours, markings, helmet, uniform and style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/police_bike/police_bike_left_rear_3q.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Phase 4 (right view mirrored locally)"
+  },
+  {
+   "id": "police_bike_right_rear_3q",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/police_bike/police_bike_rear.png",
+   "size": "1024x1024",
+   "prompt": "The same police motorbike and officer as in the reference image, now seen from behind-right at about a 35 degree angle (we see the back and the RIGHT side), slightly above. Keep identical colours, markings, helmet, uniform and style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/police_bike/police_bike_right_rear_3q.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Phase 4 (right view mirrored locally)"
+  },
+  {
+   "id": "bus_stop_sign",
+   "priority": 3,
+   "mode": "generate",
+   "size": "1024x1024",
+   "prompt": "A simple Ghanaian roadside trotro stop marker: a blue metal signboard on a single grey pole reading 'BUS STOP' in bold white letters, slightly weathered, front view. Centred, full height visible.",
+   "outputs": [
+    "assets/props/bus_stop_sign.png"
+   ],
+   "max_size": 384,
+   "needed_by": "Phase 2 bay readability"
+  },
+  {
+   "id": "roadside_props_a",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1536x1024",
+   "prompt": "Three separate Ghanaian roadside props as game billboard sprites: left a small wooden kiosk painted yellow with a big umbrella, middle a black plastic polytank water tank on a small stand, right a roadside table stall with a big striped umbrella and oranges for sale. Evenly spaced in three equal columns, bases on the same baseline, front view.",
+   "split": 3,
+   "outputs": [
+    "assets/props/kiosk_umbrella.png",
+    "assets/props/polytank_stand.png",
+    "assets/props/orange_stall.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Phase 6 roadside identity"
+  },
+  {
+   "id": "vegetation_sheet_b",
+   "priority": 4,
+   "mode": "generate",
+   "size": "1536x1024",
+   "prompt": "Three separate low roadside plants as game billboard sprites: left a clump of tall dry savannah grass, middle a leafy green roadside bush, right a patch of weeds with small yellow flowers. Evenly spaced in three equal columns, bases on the same baseline, side view.",
+   "split": 3,
+   "outputs": [
+    "assets/vegetation/grass_clump.png",
+    "assets/vegetation/bush.png",
+    "assets/vegetation/weeds.png"
+   ],
+   "max_size": 384,
+   "needed_by": "Phase 6 roadside verges"
+  },
+  {
+   "id": "taxi_rear_clean",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/taxi/taxi_rear.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same image as the reference (a yellow Ghanaian taxi saloon with a TAXI roof sign, seen straight from behind): same vehicle, same viewpoint and framing, same colours, lighting, number plate and painted-render style. Only change: There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Change nothing else. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/taxi/taxi_rear.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Remove trademark badges before public release"
+  },
+  {
+   "id": "sedan_rear_clean",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/sedan/sedan_rear.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same image as the reference (a silver saloon car, seen straight from behind): same vehicle, same viewpoint and framing, same colours, lighting, number plate and painted-render style. Only change: There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Change nothing else. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/sedan/sedan_rear.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Remove trademark badges before public release"
+  },
+  {
+   "id": "suv_rear_clean",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/suv/suv_rear.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same image as the reference (a silver SUV, seen straight from behind): same vehicle, same viewpoint and framing, same colours, lighting, number plate and painted-render style. Only change: There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Change nothing else. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/suv/suv_rear.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Remove trademark badges before public release"
+  },
+  {
+   "id": "pickup_rear_clean",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/pickup/pickup_rear.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same image as the reference (a blue double-cab pickup truck, seen straight from behind): same vehicle, same viewpoint and framing, same colours, lighting, number plate and painted-render style. Only change: There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Change nothing else. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/pickup/pickup_rear.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Remove trademark badges before public release"
+  },
+  {
+   "id": "van_rear_clean",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/van/van_rear.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same image as the reference (a black minivan, seen straight from behind): same vehicle, same viewpoint and framing, same colours, lighting, number plate and painted-render style. Only change: There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Change nothing else. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/van/van_rear.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Remove trademark badges before public release"
+  },
+  {
+   "id": "rival_trotro_rear_clean",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro/rival_trotro_rear.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same image as the reference (a white-and-teal Ghanaian trotro minibus with a GYE NYAME rear-window sticker and a loaded roof rack, seen straight from behind): same vehicle, same viewpoint and framing, same colours, lighting, number plate and painted-render style. Only change: There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Change nothing else. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro/rival_trotro_rear.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Remove trademark badges before public release"
+  },
+  {
+   "id": "rival_trotro_b_rear_clean",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same image as the reference (a cream-and-maroon Ghanaian trotro minibus with a SEA NEVER DRY rear-window sticker, Ghana-flag stripes and a loaded roof rack, seen straight from behind): same vehicle, same viewpoint and framing, same colours, lighting, number plate and painted-render style. Only change: There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Change nothing else. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Remove trademark badges before public release"
+  },
+  {
+   "id": "taxi_left_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/taxi/taxi_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its LEFT side: we still see mostly the rear, plus a thin sliver of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/taxi/taxi_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "taxi_left_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/taxi/taxi_rear.png",
+    "assets/vehicles/taxi/taxi_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its LEFT side: we see the rear and about half of the length of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/taxi/taxi_left_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "taxi_left_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/taxi/taxi_rear.png",
+    "assets/vehicles/taxi/taxi_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its LEFT side: we see the whole of its LEFT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/taxi/taxi_left_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "taxi_right_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/taxi/taxi_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its RIGHT side: we still see mostly the rear, plus a thin sliver of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/taxi/taxi_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "taxi_right_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/taxi/taxi_rear.png",
+    "assets/vehicles/taxi/taxi_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its RIGHT side: we see the rear and about half of the length of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/taxi/taxi_right_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "taxi_right_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/taxi/taxi_rear.png",
+    "assets/vehicles/taxi/taxi_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its RIGHT side: we see the whole of its RIGHT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/taxi/taxi_right_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "sedan_left_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/sedan/sedan_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its LEFT side: we still see mostly the rear, plus a thin sliver of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/sedan/sedan_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "sedan_left_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/sedan/sedan_rear.png",
+    "assets/vehicles/sedan/sedan_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its LEFT side: we see the rear and about half of the length of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/sedan/sedan_left_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "sedan_left_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/sedan/sedan_rear.png",
+    "assets/vehicles/sedan/sedan_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its LEFT side: we see the whole of its LEFT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/sedan/sedan_left_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "sedan_right_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/sedan/sedan_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its RIGHT side: we still see mostly the rear, plus a thin sliver of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/sedan/sedan_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "sedan_right_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/sedan/sedan_rear.png",
+    "assets/vehicles/sedan/sedan_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its RIGHT side: we see the rear and about half of the length of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/sedan/sedan_right_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "sedan_right_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/sedan/sedan_rear.png",
+    "assets/vehicles/sedan/sedan_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its RIGHT side: we see the whole of its RIGHT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/sedan/sedan_right_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "suv_left_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/suv/suv_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its LEFT side: we still see mostly the rear, plus a thin sliver of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/suv/suv_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "suv_left_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/suv/suv_rear.png",
+    "assets/vehicles/suv/suv_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its LEFT side: we see the rear and about half of the length of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/suv/suv_left_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "suv_left_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/suv/suv_rear.png",
+    "assets/vehicles/suv/suv_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its LEFT side: we see the whole of its LEFT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/suv/suv_left_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "suv_right_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/suv/suv_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its RIGHT side: we still see mostly the rear, plus a thin sliver of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/suv/suv_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "suv_right_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/suv/suv_rear.png",
+    "assets/vehicles/suv/suv_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its RIGHT side: we see the rear and about half of the length of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/suv/suv_right_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "suv_right_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/suv/suv_rear.png",
+    "assets/vehicles/suv/suv_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its RIGHT side: we see the whole of its RIGHT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/suv/suv_right_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "pickup_left_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/pickup/pickup_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its LEFT side: we still see mostly the rear, plus a thin sliver of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/pickup/pickup_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "pickup_left_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/pickup/pickup_rear.png",
+    "assets/vehicles/pickup/pickup_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its LEFT side: we see the rear and about half of the length of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/pickup/pickup_left_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "pickup_left_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/pickup/pickup_rear.png",
+    "assets/vehicles/pickup/pickup_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its LEFT side: we see the whole of its LEFT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/pickup/pickup_left_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "pickup_right_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/pickup/pickup_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its RIGHT side: we still see mostly the rear, plus a thin sliver of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/pickup/pickup_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "pickup_right_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/pickup/pickup_rear.png",
+    "assets/vehicles/pickup/pickup_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its RIGHT side: we see the rear and about half of the length of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/pickup/pickup_right_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "pickup_right_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/pickup/pickup_rear.png",
+    "assets/vehicles/pickup/pickup_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its RIGHT side: we see the whole of its RIGHT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/pickup/pickup_right_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "van_left_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/van/van_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its LEFT side: we still see mostly the rear, plus a thin sliver of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/van/van_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "van_left_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/van/van_rear.png",
+    "assets/vehicles/van/van_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its LEFT side: we see the rear and about half of the length of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/van/van_left_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "van_left_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/van/van_rear.png",
+    "assets/vehicles/van/van_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its LEFT side: we see the whole of its LEFT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/van/van_left_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "van_right_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/van/van_rear.png",
+    "assets/vehicles/van/van_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its RIGHT side: we see the rear and about half of the length of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/van/van_right_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "van_right_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/van/van_rear.png",
+    "assets/vehicles/van/van_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its RIGHT side: we see the whole of its RIGHT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/van/van_right_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "rival_trotro_left_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/rival_trotro/rival_trotro_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its LEFT side: we still see mostly the rear, plus a thin sliver of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro/rival_trotro_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "rival_trotro_left_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/rival_trotro/rival_trotro_rear.png",
+    "assets/vehicles/rival_trotro/rival_trotro_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its LEFT side: we see the rear and about half of the length of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro/rival_trotro_left_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "rival_trotro_left_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/rival_trotro/rival_trotro_rear.png",
+    "assets/vehicles/rival_trotro/rival_trotro_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its LEFT side: we see the whole of its LEFT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro/rival_trotro_left_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "rival_trotro_right_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/rival_trotro/rival_trotro_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its RIGHT side: we still see mostly the rear, plus a thin sliver of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro/rival_trotro_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "rival_trotro_right_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/rival_trotro/rival_trotro_rear.png",
+    "assets/vehicles/rival_trotro/rival_trotro_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its RIGHT side: we see the rear and about half of the length of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro/rival_trotro_right_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "rival_trotro_right_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/rival_trotro/rival_trotro_rear.png",
+    "assets/vehicles/rival_trotro/rival_trotro_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its RIGHT side: we see the whole of its RIGHT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro/rival_trotro_right_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "rival_trotro_b_left_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its LEFT side: we still see mostly the rear, plus a thin sliver of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_left_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "rival_trotro_b_left_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png",
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its LEFT side: we see the rear and about half of the length of its LEFT side. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_left_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "rival_trotro_b_left_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png",
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_left_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its LEFT side: we see the whole of its LEFT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_left_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "rival_trotro_b_right_rear_slight_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 15 degrees around the vehicle toward its RIGHT side: we still see mostly the rear, plus a thin sliver of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "rival_trotro_b_right_rear_3q_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png",
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 35 degrees around the vehicle toward its RIGHT side: we see the rear and about half of the length of its RIGHT side. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_right_rear_3q.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "rival_trotro_b_right_side_v2",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_rear.png",
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_right_rear_3q.png"
+   ],
+   "size": "1536x1024",
+   "prompt": "The exact same vehicle as in the first reference image: identical model, body colour, livery and stripes, roof load, number plate and details. The viewpoint is rotated about 65 degrees around the vehicle toward its RIGHT side: we see the whole of its RIGHT side from rear bumper to front bumper, with the rear only at a steep angle; this is the view of a vehicle alongside you in the next lane. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above (about 15 degrees), as from a car following just behind. Whole vehicle visible and filling the frame edge to edge, wheels on the bottom. The side's paint, stripes and windows continue the design seen in the references. There must be NO manufacturer badges, emblems or logos anywhere on the vehicle (no Toyota or any other brand mark on the tailgate, grille, wheels or mud flaps): those spots are plain painted panel or plain rubber. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_right_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Tight passing views (no stretched card), logo-free"
+  },
+  {
+   "id": "motorbike_left_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/motorbike/motorbike_rear.png",
+    "assets/vehicles/motorbike/motorbike_left_rear_3q.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "Exactly the same okada motorbike with the same rider as in the references (same colours, clothes, helmet and details), but seen from about 65 degrees toward its LEFT side: nearly a full side view with the rear at a steep angle, as a bike alongside you in the next lane. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above. Whole bike and rider visible, wheels on the bottom. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/motorbike/motorbike_left_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Passing view for bikes"
+  },
+  {
+   "id": "motorbike_right_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/motorbike/motorbike_rear.png",
+    "assets/vehicles/motorbike/motorbike_right_rear_3q.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "Exactly the same okada motorbike with the same rider as in the references (same colours, clothes, helmet and details), but seen from about 65 degrees toward its RIGHT side: nearly a full side view with the rear at a steep angle, as a bike alongside you in the next lane. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above. Whole bike and rider visible, wheels on the bottom. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/motorbike/motorbike_right_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Passing view for bikes"
+  },
+  {
+   "id": "police_bike_left_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/police_bike/police_bike_rear.png",
+    "assets/vehicles/police_bike/police_bike_left_rear_3q.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "Exactly the same police motorbike with the same officer as in the references (same colours, clothes, helmet and details), but seen from about 65 degrees toward its LEFT side: nearly a full side view with the rear at a steep angle, as a bike alongside you in the next lane. The rear of the vehicle is on the RIGHT of the picture and its side runs away to the LEFT, where the front is. Viewed from slightly above. Whole bike and rider visible, wheels on the bottom. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/police_bike/police_bike_left_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Passing view for bikes"
+  },
+  {
+   "id": "police_bike_right_side",
+   "priority": 2,
+   "mode": "edit",
+   "reference": [
+    "assets/vehicles/police_bike/police_bike_rear.png",
+    "assets/vehicles/police_bike/police_bike_right_rear_3q.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "Exactly the same police motorbike with the same officer as in the references (same colours, clothes, helmet and details), but seen from about 65 degrees toward its RIGHT side: nearly a full side view with the rear at a steep angle, as a bike alongside you in the next lane. The rear of the vehicle is on the LEFT of the picture and its side runs away to the RIGHT, where the front is. Viewed from slightly above. Whole bike and rider visible, wheels on the bottom. Same painted-render style. Flat magenta background, no shadow, no ground, no scenery.",
+   "outputs": [
+    "assets/vehicles/police_bike/police_bike_right_side.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Passing view for bikes"
+  },
+  {
+   "id": "hawker_water_scared",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/characters/hawker_water.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same woman carrying a tray of water sachets on her head from the reference (same face, clothes, colours and load), now STARTLED by a minibus that just missed them: caught mid-jump backwards toward the RIGHT side of the picture, body leaning back and away from the left, one hand still steadying the load, the other arm flung up defensively, eyes wide and mouth open in shock, both feet just off the ground. Full body, natural anatomy, dynamic but believable. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/characters/hawker_water_scared.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Near-miss reaction for people on the road"
+  },
+  {
+   "id": "hawker_water_walk",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/characters/hawker_water.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same woman carrying a tray of water sachets on her head from the reference (same face, clothes, colours and load), now seen in SIDE VIEW walking toward the RIGHT side of the picture: full profile facing right, mid-stride, relaxed natural walk, crossing a street. Full body, feet at the bottom. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/characters/hawker_water_walk.png"
+   ],
+   "max_size": 512,
+   "needed_by": "People crossing the road side-on"
+  },
+  {
+   "id": "hawker_bread_scared",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/characters/hawker_bread.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same boy carrying a stack of bread loaves on his shoulder from the reference (same face, clothes, colours and load), now STARTLED by a minibus that just missed them: caught mid-jump backwards toward the RIGHT side of the picture, body leaning back and away from the left, one hand still steadying the load, the other arm flung up defensively, eyes wide and mouth open in shock, both feet just off the ground. Full body, natural anatomy, dynamic but believable. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/characters/hawker_bread_scared.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Near-miss reaction for people on the road"
+  },
+  {
+   "id": "hawker_bread_walk",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/characters/hawker_bread.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same boy carrying a stack of bread loaves on his shoulder from the reference (same face, clothes, colours and load), now seen in SIDE VIEW walking toward the RIGHT side of the picture: full profile facing right, mid-stride, relaxed natural walk, crossing a street. Full body, feet at the bottom. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/characters/hawker_bread_walk.png"
+   ],
+   "max_size": 512,
+   "needed_by": "People crossing the road side-on"
+  },
+  {
+   "id": "hawker_chips_scared",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/characters/hawker_chips.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same woman in a blue apron carrying a glass box of plantain chips on her head from the reference (same face, clothes, colours and load), now STARTLED by a minibus that just missed them: caught mid-jump backwards toward the RIGHT side of the picture, body leaning back and away from the left, one hand still steadying the load, the other arm flung up defensively, eyes wide and mouth open in shock, both feet just off the ground. Full body, natural anatomy, dynamic but believable. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/characters/hawker_chips_scared.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Near-miss reaction for people on the road"
+  },
+  {
+   "id": "hawker_chips_walk",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/characters/hawker_chips.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same woman in a blue apron carrying a glass box of plantain chips on her head from the reference (same face, clothes, colours and load), now seen in SIDE VIEW walking toward the RIGHT side of the picture: full profile facing right, mid-stride, relaxed natural walk, crossing a street. Full body, feet at the bottom. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/characters/hawker_chips_walk.png"
+   ],
+   "max_size": 512,
+   "needed_by": "People crossing the road side-on"
+  },
+  {
+   "id": "trotro_mate_window",
+   "priority": 1,
+   "mode": "edit",
+   "reference": [
+    "assets/characters/trotro_mate.png",
+    "assets/vehicles/player_trotro/player_trotro_rear.png"
+   ],
+   "size": "1024x1024",
+   "prompt": "The same young trotro mate as in the first reference (same Ghana-colours football jersey, backwards cap, cedi notes in his raised hand), seen from BEHIND as from a car following the minibus. Only his upper body: he leans out sideways to the RIGHT from the minibus's open side door, one hand gripping the edge, the other arm raised high waving the cedi notes, mouth open shouting. The LEFT edge of the picture is a narrow vertical strip of the minibus's own side body and door pillar, painted exactly like the minibus in the second reference (bright yellow upper body with a blue band lower down); his waist and hips are hidden behind that strip, so he visibly emerges from the minibus. The strip runs the full height of the picture. Same painted-render style. Flat magenta background everywhere else, no shadow.",
+   "outputs": [
+    "assets/characters/trotro_mate_window.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Mate sits flush in the trotro's door"
+  },
+  {
+   "id": "pothole_deep",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1024x1024",
+   "prompt": "A single deep pothole in a worn dark-grey asphalt road, seen from above and slightly behind, looking forward into it as a driver would: jagged broken asphalt edges with visible layered thickness, the far inside wall of the hole lit and clearly visible, a deep black shadow under the near edge, the hole dug well down into red-brown laterite earth with loose stones and a small dark muddy puddle at the bottom. Strong depth and ambient occlusion so it reads as a real hole. Only the pothole and a thin ring of broken asphalt around it, centred, on a flat magenta background, no road beyond the ring.",
+   "outputs": [
+    "assets/environment/pothole_decal.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Deeper-looking potholes"
+  },
+  {
+   "id": "hawker_chips_scared_v2",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/characters/hawker_chips.png",
+   "size": "1024x1024",
+   "prompt": "Exactly the same woman in a blue apron carrying a glass box of plantain chips on her head from the reference (same face, clothes, colours and load), now STARTLED by a minibus that just missed them: caught mid-jump backwards toward the RIGHT side of the picture, body leaning back and away from the left, her LEFT hand (on the right of the picture) steadying the glass box on her head, her RIGHT arm flung up defensively in front of her face; exactly two arms and two hands, eyes wide and mouth open in shock, both feet just off the ground. Full body, natural anatomy, dynamic but believable. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/characters/hawker_chips_scared.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Near-miss reaction for people on the road"
+  },
+  {
+   "id": "van_right_rear_slight_v3",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/van/van_rear.png",
+   "size": "1024x1024",
+   "prompt": "The exact same black van as in the reference image (identical model, colours, number plate; NO roof rack, NO luggage, plain roof exactly like the reference), but the viewpoint is rotated about 15 degrees to the vehicle's right: we still see mostly the rear, plus a thin sliver of the vehicle's RIGHT side. Viewed from slightly above and behind. Whole vehicle visible, centred, filling most of the frame. Same painted-render style. Flat magenta background, no shadow, no ground. The tailgate centre, where a badge would be, is plain black paint with nothing on it.",
+   "outputs": [
+    "assets/vehicles/van/van_right_rear_slight.png"
+   ],
+   "max_size": 640,
+   "needed_by": "v1 invented a roof rack"
+  },
+  {
+   "id": "fitter_shop",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1536x1024",
+   "prompt": "A small roadside Ghanaian fitter (car mechanic) workshop shack seen from the front-left: a rusty corrugated-metal roof on wooden posts, a stack of old tyres, a car battery, an oil drum, spanners hanging on a board, a jack and a toolbox on oily red earth. Compact, whole structure visible, ground line at the bottom.",
+   "outputs": [
+    "assets/props/fitter_shop.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Mechanic stop"
+  },
+  {
+   "id": "mechanic_wave",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1024x1024",
+   "prompt": "A friendly young Ghanaian roadside mechanic (fitter) in oil-stained blue overalls with the top tied at the waist over a white vest, waving a big spanner in one raised hand to call a driver in, smiling. Full body standing, front view, feet at the bottom.",
+   "outputs": [
+    "assets/characters/mechanic_wave.png"
+   ],
+   "max_size": 512,
+   "needed_by": "Mechanic stop"
+  },
+  {
+   "id": "taxi_left_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/taxi/taxi_left_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its LEFT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-LEFT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/taxi/taxi_left_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "taxi_right_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/taxi/taxi_right_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its RIGHT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-RIGHT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/taxi/taxi_right_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "sedan_left_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/sedan/sedan_left_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its LEFT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-LEFT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/sedan/sedan_left_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "sedan_right_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/sedan/sedan_right_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its RIGHT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-RIGHT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/sedan/sedan_right_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "suv_left_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/suv/suv_left_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its LEFT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-LEFT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/suv/suv_left_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "suv_right_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/suv/suv_right_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its RIGHT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-RIGHT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/suv/suv_right_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "pickup_left_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/pickup/pickup_left_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its LEFT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-LEFT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/pickup/pickup_left_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "pickup_right_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/pickup/pickup_right_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its RIGHT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-RIGHT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/pickup/pickup_right_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "van_left_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/van/van_left_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its LEFT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-LEFT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/van/van_left_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "van_right_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/van/van_right_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its RIGHT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-RIGHT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/van/van_right_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "rival_trotro_left_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro/rival_trotro_left_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its LEFT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-LEFT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/rival_trotro/rival_trotro_left_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "rival_trotro_right_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro/rival_trotro_right_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its RIGHT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-RIGHT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/rival_trotro/rival_trotro_right_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "rival_trotro_b_left_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro_b/rival_trotro_b_left_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its LEFT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-LEFT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_left_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "rival_trotro_b_right_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/rival_trotro_b/rival_trotro_b_right_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its RIGHT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-RIGHT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/rival_trotro_b/rival_trotro_b_right_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "motorbike_left_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/motorbike/motorbike_left_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same bike and rider as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its LEFT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the bike and rider runs away toward the TOP-LEFT of the picture, its front higher in the picture than its rear, in strong perspective. Whole bike and rider visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/motorbike/motorbike_left_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "motorbike_right_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/motorbike/motorbike_right_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same bike and rider as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its RIGHT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the bike and rider runs away toward the TOP-RIGHT of the picture, its front higher in the picture than its rear, in strong perspective. Whole bike and rider visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/motorbike/motorbike_right_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "police_bike_left_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/police_bike/police_bike_left_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same bike and rider as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its LEFT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the bike and rider runs away toward the TOP-LEFT of the picture, its front higher in the picture than its rear, in strong perspective. Whole bike and rider visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/police_bike/police_bike_left_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "police_bike_right_rear_3q_high",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/police_bike/police_bike_right_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same bike and rider as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its RIGHT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the bike and rider runs away toward the TOP-RIGHT of the picture, its front higher in the picture than its rear, in strong perspective. Whole bike and rider visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/police_bike/police_bike_right_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "taxi_left_rear_3q_high_b",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "assets/vehicles/taxi/taxi_left_rear_3q.png",
+   "size": "1024x1024",
+   "prompt": "The exact same vehicle as in the reference image (identical model, colours, livery, roof load, number plate and details) seen from the same direction (its rear and its LEFT side), but from much HIGHER UP: looking down at about 40 degrees, as from the roof of a bus just behind it in the next lane. The roof is clearly visible and the vehicle runs away toward the TOP-LEFT of the picture, its front higher in the picture than its rear, in strong perspective. Whole vehicle visible, with a clear margin of background on every side: nothing touches the edges of the picture, the front bumper is fully visible. No manufacturer badges, emblems or logos anywhere. Same painted-render style. Flat magenta background, no shadow, no ground.",
+   "outputs": [
+    "assets/vehicles/taxi/taxi_left_rear_3q_high.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Close-range passing view (camera high above)"
+  },
+  {
+   "id": "cover_portrait_v2",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/cover/cover_portrait.png",
+   "size": "1024x1536",
+   "background": "opaque",
+   "style": "",
+   "prompt": "Redraw this exact game cover scene as a clean, sharp, high-detail illustration in the same vintage comic-poster style (bold ink outlines, warm halftone print texture, sun-faded paper border). Keep the same composition: a busy Accra street, the yellow-and-blue Ghanaian trotro minibus with luggage piled on its roof rack bouncing out of a deep cracked pothole with red earth and flying stones, the yellow taxi and the silver saloon honking behind it, roadside kiosks, colourful umbrellas, palm trees, and the woman carrying pure-water sachets on her head. IMPORTANT CHANGES: (1) a DRIVER is clearly visible at the steering wheel behind the windscreen, both hands on the wheel, wide-eyed and gritting his teeth as the trotro hits the pothole. (2) The young mate in a red-gold-green Ghana football jersey and backwards black cap leans out of the side window shouting, waving cedi notes, with a comic speech bubble that reads exactly: DRIVER, SLOW DOWN OO! (3) Do NOT draw any title or logo text: leave the top of the picture as clean open sky, free of objects, where a logo will be placed. Crisp clean details on faces, hands and the vehicles; no blur, no mush. No brand logos or badges on any vehicle. Portrait 2:3 layout: the top quarter is open sky for the logo; the trotro fills the middle; the bottom fifth is calm road for a PLAY button.",
+   "outputs": [
+    "assets/ui/cover_portrait.png"
+   ],
+   "needed_by": "Home screen (portrait)"
+  },
+  {
+   "id": "cover_landscape_v2",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/cover/cover_landscape.png",
+   "size": "1536x1024",
+   "background": "opaque",
+   "style": "",
+   "prompt": "Redraw this exact game cover scene as a clean, sharp, high-detail illustration in the same vintage comic-poster style (bold ink outlines, warm halftone print texture, sun-faded paper border). Keep the same composition: a busy Accra street, the yellow-and-blue Ghanaian trotro minibus with luggage piled on its roof rack bouncing out of a deep cracked pothole with red earth and flying stones, the yellow taxi and the silver saloon honking behind it, roadside kiosks, colourful umbrellas, palm trees, and the woman carrying pure-water sachets on her head. IMPORTANT CHANGES: (1) a DRIVER is clearly visible at the steering wheel behind the windscreen, both hands on the wheel, wide-eyed and gritting his teeth as the trotro hits the pothole. (2) The young mate in a red-gold-green Ghana football jersey and backwards black cap leans out of the side window shouting, waving cedi notes, with a comic speech bubble that reads exactly: DRIVER, SLOW DOWN OO! (3) Do NOT draw any title or logo text: leave the top of the picture as clean open sky, free of objects, where a logo will be placed. Crisp clean details on faces, hands and the vehicles; no blur, no mush. No brand logos or badges on any vehicle. Wide 3:2 layout: the top fifth is open sky for the logo; the trotro is centred; calm road at the bottom centre for a PLAY button.",
+   "outputs": [
+    "assets/ui/cover_landscape.png"
+   ],
+   "needed_by": "Home screen (landscape)"
+  },
+  {
+   "id": "cover_portrait_v3",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "tools/imagegen/raw/cover_portrait_v2.png",
+   "size": "1024x1536",
+   "background": "opaque",
+   "style": "",
+   "prompt": "Keep this exact illustration unchanged (same scene, same people, same driver at the wheel, same mate and speech bubble, same style and colours). Only add the game title in the open sky at the top: the words TROTRO RUSH, spelled exactly T-R-O-T-R-O R-U-S-H, in huge chunky bold rounded comic letters, warm golden-yellow fill with a thick dark brown outline and a soft drop shadow, like a vintage comic poster masthead, centred, fully inside the picture. Stack it on two lines: TROTRO above RUSH. No other text anywhere except the existing speech bubble.",
+   "outputs": [
+    "assets/ui/cover_portrait.png"
+   ],
+   "needed_by": "Home screen (portrait)"
+  },
+  {
+   "id": "cover_landscape_v3",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "tools/imagegen/raw/cover_landscape_v2.png",
+   "size": "1536x1024",
+   "background": "opaque",
+   "style": "",
+   "prompt": "Keep this exact illustration unchanged (same scene, same people, same driver at the wheel, same mate and speech bubble, same style and colours). Only add the game title in the open sky at the top: the words TROTRO RUSH, spelled exactly T-R-O-T-R-O R-U-S-H, in huge chunky bold rounded comic letters, warm golden-yellow fill with a thick dark brown outline and a soft drop shadow, like a vintage comic poster masthead, centred, fully inside the picture. One single line. No other text anywhere except the existing speech bubble.",
+   "outputs": [
+    "assets/ui/cover_landscape.png"
+   ],
+   "needed_by": "Home screen (landscape)"
+  },
+  {
+   "id": "bus_shelter",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1536x1024",
+   "prompt": "A typical Ghanaian roadside trotro bus-stop shelter seen from the front, slightly from the side: a long curved corrugated-metal roof painted blue with a yellow fascia, on four slim steel posts, a long wooden-slat bench underneath, a small metal rubbish bin, a few old posters stuck on the posts, a little dust and wear. Whole structure visible, wide and low, ground line at the bottom, no people, no text.",
+   "outputs": [
+    "assets/props/bus_shelter.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Bus stop structure"
+  },
+  {
+   "id": "fitter_workshop",
+   "priority": 1,
+   "mode": "generate",
+   "size": "1536x1024",
+   "prompt": "A roadside Ghanaian fitter (car mechanic) workshop building seen from the front, slightly from the side: a single-storey painted cinder-block garage with a wide open front, a rusty corrugated-metal roof overhanging the front on wooden posts, a hand-painted signboard on top reading FITTER in bold blue letters, stacks of old tyres, an oil drum, a car battery, a jack and toolboxes out front, spanners hanging inside, oil stains on the ground. Whole building visible, ground line at the bottom, no people, no other text.",
+   "outputs": [
+    "assets/props/fitter_workshop.png"
+   ],
+   "max_size": 640,
+   "needed_by": "Mechanic stop structure"
+  },
+  {
+   "id": "stop_fitter_side",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "tools/imagegen/raw/fitter_workshop.png",
+   "size": "1536x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its LONG side wall (the long facade) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective, all verticals vertical and all horizontals horizontal. Show only the wall from the ground line up to the eaves - no roof surface - as one wide horizontal band spanning the full image width edge to edge, centred vertically. Everything above and below the wall band is flat magenta. Keep exactly the same colours, windows, doors, signs, shop fronts and details as the reference. The FITTER signboard stays centred above the wide open garage front; tyres, oil drum and tools stay along the base of the wall.",
+   "outputs": [
+    "assets/buildings/kit/stop_fitter_side.png"
+   ],
+   "max_size": 1536,
+   "needed_by": "Mechanic stop building"
+  },
+  {
+   "id": "stop_fitter_end",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "tools/imagegen/raw/fitter_workshop.png",
+   "size": "1024x1024",
+   "style": "Clean architectural game texture in the same painted style and colours as the reference.",
+   "prompt": "Using the building in the reference image, draw its SHORT end wall (the narrow end facing the viewer, including its triangular gable up to the roof ridge if it has one) as a flat orthographic architectural elevation: perfectly straight-on, zero perspective. Centred, touching the bottom of the image, filling most of the height. Everything outside the building outline is flat magenta. Keep exactly the same colours, windows, doors, signs and details as the reference.",
+   "outputs": [
+    "assets/buildings/kit/stop_fitter_end.png"
+   ],
+   "max_size": 1024,
+   "needed_by": "Mechanic stop building"
+  },
+  {
+   "id": "cover_portrait_v4",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/cover/cover_portrait_cur.png",
+   "size": "2048x3072",
+   "background": "opaque",
+   "style": "",
+   "prompt": "Keep this exact illustration: same composition, same vintage comic-poster style (bold ink outlines, warm halftone print texture, sun-faded paper border), same colours, same TROTRO RUSH title lettering, same speech bubble reading exactly DRIVER, SLOW DOWN OO!, same pothole, kiosks, umbrellas, palm trees and people. Redraw it sharper and cleaner with crisp fine detail. FIX THESE PROBLEMS: (1) EYES: every person must have natural, expressive cartoon eyes with clearly drawn dark brown irises and black pupils, never blank white eyes. The trotro driver looks ahead at the road with wide alarmed eyes; the young mate in the Ghana jersey looks toward the camera, laughing; the woman carrying the pure-water bowl on her head smiles with friendly eyes looking at the trotro; the stall vendor has normal eyes. (2) The yellow taxi beside the trotro has a DRIVER clearly visible behind its windscreen: a Ghanaian man with both hands on the steering wheel, looking annoyed at the trotro. Any other car whose windscreen is visible also has a driver inside; no empty driver seats. (3) The taxi's roof sign reads exactly TAXI. (4) The trotro number plate is a clean white Ghana plate reading exactly GR 2468-26. Remove the small garbled stickers on the back of the trotro; no other text anywhere on vehicles. Faces, hands and eyes must be well drawn and anatomically correct, no distortions.",
+   "outputs": [
+    "assets/ui/cover_portrait.jpg"
+   ],
+   "needed_by": "Home screen (portrait)"
+  },
+  {
+   "id": "cover_landscape_v4",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/cover/cover_landscape_cur.png",
+   "size": "2048x1152",
+   "background": "opaque",
+   "style": "",
+   "prompt": "Keep this exact illustration: same composition, same vintage comic-poster style (bold ink outlines, warm halftone print texture, sun-faded paper border), same colours, same TROTRO RUSH title lettering, same speech bubble reading exactly DRIVER, SLOW DOWN OO!, same pothole, kiosks, umbrellas, palm trees and people. Redraw it sharper and cleaner with crisp fine detail. FIX THESE PROBLEMS: (1) EYES: every person must have natural, expressive cartoon eyes with clearly drawn dark brown irises and black pupils, never blank white eyes. The trotro driver looks ahead at the road with wide alarmed eyes; the young mate in the Ghana jersey looks toward the camera, laughing; the woman carrying the pure-water bowl on her head smiles with friendly eyes looking at the trotro; the stall vendor has normal eyes. (2) The yellow taxi beside the trotro has a DRIVER clearly visible behind its windscreen: a Ghanaian man with both hands on the steering wheel, looking annoyed at the trotro. Any other car whose windscreen is visible also has a driver inside; no empty driver seats. (3) The taxi's roof sign reads exactly TAXI. (4) The trotro number plate is a clean white Ghana plate reading exactly GR 2468-26. Remove the small garbled stickers on the back of the trotro; no other text anywhere on vehicles. Faces, hands and eyes must be well drawn and anatomically correct, no distortions.",
+   "outputs": [
+    "assets/ui/cover_landscape.jpg"
+   ],
+   "needed_by": "Home screen (landscape)"
+  },
+  {
+   "id": "cover_portrait_v5",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "tools/imagegen/raw/cover_portrait_v4.png",
+   "size": "2048x3072",
+   "background": "opaque",
+   "style": "",
+   "prompt": "Keep this exact illustration completely unchanged: every person, face, eye, pose, colour, the title, the speech bubble, the TAXI sign and the GR 2468-26 plate stay exactly as they are. Only make these small clean-ups: (1) On the back of the yellow-and-blue trotro, remove the small garbled stickers and the round badge logo; leave plain clean painted panels there with just the tail lights and the number plate. (2) The yellow car cut off in the bottom-right corner: draw its interior cleanly, with a calm driver's head and shoulders and hands on the steering wheel seen through the side window, no tangled shapes. Same vintage comic-poster style, crisp sharp detail.",
+   "outputs": [
+    "assets/ui/cover_portrait.jpg"
+   ],
+   "needed_by": "Home screen (portrait)"
+  },
+  {
+   "id": "cover_portrait_patch1",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/cover/p_back_crop.png",
+   "size": "1024x1024",
+   "background": "opaque",
+   "style": "",
+   "prompt": "Keep this exact illustration pixel-for-pixel identical in composition, framing, people, faces, colours and style. Only change the front of the yellow-and-blue minibus: remove the round emblem badge on the front, and remove the small garbled stickers next to the right headlight, leaving clean plain painted yellow and blue panels there. Keep the GR 2468-26 number plate, headlights, indicators and everything else exactly the same.",
+   "outputs": [],
+   "needed_by": "Cover clean-up patch"
+  },
+  {
+   "id": "cover_landscape_patch1",
+   "priority": 1,
+   "mode": "edit",
+   "reference": "tools/imagegen/sources/cover/l_front_crop.png",
+   "size": "1024x1024",
+   "background": "opaque",
+   "style": "",
+   "prompt": "Keep this exact illustration pixel-for-pixel identical in composition, framing, people, faces, colours and style. Only change the front of the yellow-and-blue minibus: remove the round emblem badge on the front of the minibus AND the emblem badge on the yellow taxi grille, and remove the small garbled stickers next to the right headlight, leaving clean plain painted yellow and blue panels there. Keep the GR 2468-26 number plate, headlights, indicators and everything else exactly the same.",
+   "outputs": [],
+   "needed_by": "Cover clean-up patch"
+  },
+  {
+   "id": "trailer_01_child_window",
+   "priority": 1,
+   "mode": "edit",
+   "reference": [
+    "assets/ui/cover_portrait.jpg"
+   ],
+   "size": "1024x1536",
+   "background": "opaque",
+   "style": "Match the FIRST reference image's art style exactly: hand-drawn vintage comic-poster illustration, bold black ink outlines, halftone dot shading, warm sun-faded paper texture, saturated yellows, blues, reds and greens, cheerful expressive faces. Vertical 2:3 composition for a phone trailer. No text, no logos, no speech bubbles, no watermark, no border frame.",
+   "prompt": "A curious Ghanaian child, about 8 years old, kneeling at an open wooden window of a family house in Accra, chin resting on folded arms on the sill, seen from inside the room at a slight angle so we see the child's wide-eyed, amazed face and, through the window, the busy street below: several colourful trotro minibuses with luggage-piled roof racks driving past, roadside stalls with rainbow umbrellas, palm trees, morning sun. One trotro is the player's trotro: a yellow Toyota Hiace-style minibus with a blue stripe along the sides, roof rack piled with coloured luggage and a cooler, 'NYAME NTI' lettered on the rear window, Ghana flag sticker.",
+   "outputs": [],
+   "needed_by": "Trailer AI key shot"
+  },
+  {
+   "id": "trailer_06_mate_fare",
+   "priority": 1,
+   "mode": "edit",
+   "reference": [
+    "assets/ui/cover_portrait.jpg",
+    "assets/characters/trotro_mate.png"
+   ],
+   "size": "1024x1536",
+   "background": "opaque",
+   "style": "Match the FIRST reference image's art style exactly: hand-drawn vintage comic-poster illustration, bold black ink outlines, halftone dot shading, warm sun-faded paper texture, saturated yellows, blues, reds and greens, cheerful expressive faces. Vertical 2:3 composition for a phone trailer. No text, no logos, no speech bubbles, no watermark, no border frame.",
+   "prompt": "Close medium shot of the trotro mate from the second reference: young Ghanaian man, black baseball cap, yellow Ghana football jersey with red and green sleeves and a black star on the chest, blue jeans, standing in front of the player's trotro: a yellow Toyota Hiace-style minibus with a blue stripe along the sides, roof rack piled with coloured luggage and a cooler, 'NYAME NTI' lettered on the rear window, Ghana flag sticker parked at a roadside bus stop, happily counting a fan of Ghana cedi banknotes in his hands, big proud grin, one eyebrow raised. Busy Accra street and stalls behind.",
+   "outputs": [],
+   "needed_by": "Trailer AI key shot"
+  },
+  {
+   "id": "trailer_09_rival_mate",
+   "priority": 1,
+   "mode": "edit",
+   "reference": [
+    "assets/ui/cover_portrait.jpg",
+    "assets/vehicles/rival_trotro/rival_trotro_rear.png"
+   ],
+   "size": "1024x1536",
+   "background": "opaque",
+   "style": "Match the FIRST reference image's art style exactly: hand-drawn vintage comic-poster illustration, bold black ink outlines, halftone dot shading, warm sun-faded paper texture, saturated yellows, blues, reds and greens, cheerful expressive faces. Vertical 2:3 composition for a phone trailer. No text, no logos, no speech bubbles, no watermark, no border frame.",
+   "prompt": "A rival trotro mate, a cocky young Ghanaian man in a red vest, leaning far out of the side window of a rival trotro minibus (white body with a teal stripe and yellow pinstripe, roof rack of luggage, like the second reference), smirking straight at the viewer, one hand beckoning a waiting passenger, speed lines and dust, busy three-lane Accra road.",
+   "outputs": [],
+   "needed_by": "Trailer AI key shot"
+  },
+  {
+   "id": "trailer_11_police_fine",
+   "priority": 1,
+   "mode": "edit",
+   "reference": [
+    "assets/ui/cover_portrait.jpg",
+    "assets/characters/trotro_mate.png",
+    "assets/vehicles/police_bike/police_bike_rear.png"
+   ],
+   "size": "1024x1536",
+   "background": "opaque",
+   "style": "Match the FIRST reference image's art style exactly: hand-drawn vintage comic-poster illustration, bold black ink outlines, halftone dot shading, warm sun-faded paper texture, saturated yellows, blues, reds and greens, cheerful expressive faces. Vertical 2:3 composition for a phone trailer. No text, no logos, no speech bubbles, no watermark, no border frame.",
+   "prompt": "A Ghanaian traffic police officer (dark blue uniform, neon yellow hi-vis vest, white helmet) standing beside his white police motorbike with blue-checked panniers and a blue beacon, holding out an open palm with a stern, satisfied look, at the roadside next to the player's trotro: a yellow Toyota Hiace-style minibus with a blue stripe along the sides, roof rack piled with coloured luggage and a cooler, 'NYAME NTI' lettered on the rear window, Ghana flag sticker. the trotro mate from the second reference: young Ghanaian man, black baseball cap, yellow Ghana football jersey with red and green sleeves and a black star on the chest, blue jeans reluctantly hands over cedi notes, pained comic grimace. Street and stalls behind.",
+   "outputs": [],
+   "needed_by": "Trailer AI key shot"
+  },
+  {
+   "id": "trailer_01_child_window_v2",
+   "priority": 1,
+   "mode": "edit",
+   "reference": [
+    "tools/trailer/ref_scene.png"
+   ],
+   "size": "1024x1536",
+   "background": "opaque",
+   "style": "Match the FIRST reference image exactly: it is a frame from the Trotro Rush video game. Same look: bright, clean, stylized 3D game render, smooth surfaces, vivid saturated colours, clear deep-blue sky, sunny daylight with soft shadows, colourful painted Accra shop buildings (yellow, red, blue walls), grey asphalt, palm and leafy trees, power poles. It must look like an in-game cinematic from this same game, NOT a comic, NOT a painting, NOT a photograph. Vertical 2:3 composition for a phone trailer. No HUD, no text overlays, no logos, no watermark, no border.",
+   "prompt": "Inside a modest Accra house, a curious Ghanaian child about 8 years old kneels at an open window, chin on folded arms on the sill, seen from inside at a slight angle so we see the child's wide-eyed, amazed face. Through the window, the sunny street from the game: several trotro minibuses driving past on the asphalt road, the colourful shop buildings opposite. The nearest trotro is the player's trotro exactly as in the first reference: a yellow Toyota Hiace-style minibus with a blue stripe, roof rack with red, blue and cream luggage, 'NYAME NTI' lettered on the rear window.",
+   "outputs": [],
+   "needed_by": "Trailer AI key shot (game style)"
+  },
+  {
+   "id": "trailer_06_mate_fare_v2",
+   "priority": 1,
+   "mode": "edit",
+   "reference": [
+    "tools/trailer/ref_scene.png",
+    "assets/characters/trotro_mate.png"
+   ],
+   "size": "1024x1536",
+   "background": "opaque",
+   "style": "Match the FIRST reference image exactly: it is a frame from the Trotro Rush video game. Same look: bright, clean, stylized 3D game render, smooth surfaces, vivid saturated colours, clear deep-blue sky, sunny daylight with soft shadows, colourful painted Accra shop buildings (yellow, red, blue walls), grey asphalt, palm and leafy trees, power poles. It must look like an in-game cinematic from this same game, NOT a comic, NOT a painting, NOT a photograph. Vertical 2:3 composition for a phone trailer. No HUD, no text overlays, no logos, no watermark, no border.",
+   "prompt": "Medium shot of the trotro mate exactly as in the mate reference: young Ghanaian man, black baseball cap, yellow Ghana football jersey with red and green sleeves and a black star, blue jeans, standing on the pavement in front of the player's trotro exactly as in the first reference: a yellow Toyota Hiace-style minibus with a blue stripe, roof rack with red, blue and cream luggage, 'NYAME NTI' lettered on the rear window parked in a roadside bus stop lay-by, happily counting a fan of Ghana cedi banknotes, big proud grin. The game's colourful street behind.",
+   "outputs": [],
+   "needed_by": "Trailer AI key shot (game style)"
+  },
+  {
+   "id": "trailer_09_rival_mate_v2",
+   "priority": 1,
+   "mode": "edit",
+   "reference": [
+    "tools/trailer/ref_scene.png",
+    "assets/vehicles/rival_trotro/rival_trotro_rear.png"
+   ],
+   "size": "1024x1536",
+   "background": "opaque",
+   "style": "Match the FIRST reference image exactly: it is a frame from the Trotro Rush video game. Same look: bright, clean, stylized 3D game render, smooth surfaces, vivid saturated colours, clear deep-blue sky, sunny daylight with soft shadows, colourful painted Accra shop buildings (yellow, red, blue walls), grey asphalt, palm and leafy trees, power poles. It must look like an in-game cinematic from this same game, NOT a comic, NOT a painting, NOT a photograph. Vertical 2:3 composition for a phone trailer. No HUD, no text overlays, no logos, no watermark, no border.",
+   "prompt": "A cocky rival trotro mate, young Ghanaian man in a red vest, leaning far out of the side window of the rival trotro from the second reference (white minibus with a teal stripe and thin yellow pinstripe, roof rack of luggage), smirking straight at the viewer and beckoning, driving fast down the game's three-lane road.",
+   "outputs": [],
+   "needed_by": "Trailer AI key shot (game style)"
+  },
+  {
+   "id": "trailer_11_police_fine_v2",
+   "priority": 1,
+   "mode": "edit",
+   "reference": [
+    "tools/trailer/ref_scene.png",
+    "assets/characters/trotro_mate.png",
+    "assets/vehicles/police_bike/police_bike_rear.png"
+   ],
+   "size": "1024x1536",
+   "background": "opaque",
+   "style": "Match the FIRST reference image exactly: it is a frame from the Trotro Rush video game. Same look: bright, clean, stylized 3D game render, smooth surfaces, vivid saturated colours, clear deep-blue sky, sunny daylight with soft shadows, colourful painted Accra shop buildings (yellow, red, blue walls), grey asphalt, palm and leafy trees, power poles. It must look like an in-game cinematic from this same game, NOT a comic, NOT a painting, NOT a photograph. Vertical 2:3 composition for a phone trailer. No HUD, no text overlays, no logos, no watermark, no border.",
+   "prompt": "At the roadside, a Ghanaian traffic police officer exactly like the bike reference (dark blue uniform, neon yellow hi-vis vest, white helmet) stands beside his white police motorbike with blue-checked panniers and a blue beacon, holding out his open palm, stern and satisfied. Beside the player's trotro exactly as in the first reference: a yellow Toyota Hiace-style minibus with a blue stripe, roof rack with red, blue and cream luggage, 'NYAME NTI' lettered on the rear window, the trotro mate exactly as in the mate reference: young Ghanaian man, black baseball cap, yellow Ghana football jersey with red and green sleeves and a black star, blue jeans leans out of the side window reluctantly handing him cedi notes, pained grimace.",
+   "outputs": [],
+   "needed_by": "Trailer AI key shot (game style)"
+  },
+  {
+   "id": "trailer_logo",
+   "priority": 1,
+   "mode": "edit",
+   "reference": [
+    "tools/trailer/ref_logo.png"
+   ],
+   "size": "1536x1024",
+   "background": "transparent",
+   "style": "",
+   "prompt": "Recreate ONLY the 'TROTRO RUSH' title lettering from the reference, exactly matching it: the same chunky rounded heavy bold letterforms, the same warm golden-yellow fill with subtle hand-drawn texture and soft lighter highlight, the same thick black outline and the same dark 3D drop-shadow extrusion offset down-right. Two stacked lines: 'TROTRO' on top, 'RUSH' centred below, tightly spaced like the reference. Spell exactly T-R-O-T-R-O and R-U-S-H. Fully transparent background: no sky, no paper texture, no border, no other elements. Crisp clean edges, centred, filling most of the canvas.",
+   "outputs": [],
+   "needed_by": "Trailer end card logo"
+  }
+ ]
+}

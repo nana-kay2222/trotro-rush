@@ -1,0 +1,226 @@
+<title>Trotro Rush</title>
+<style>
+/* One full-screen game canvas over a dark Accra-night loading screen (single dark look). */
+:root {
+  --night: #12203a;
+  --ink: #f3ead8;
+  --kente-gold: #f2b705;
+  --kente-green: #1f8a4c;
+  --kente-red: #c8322b;
+  --muted: #9aa6bd;
+  --display: "Bungee", "Arial Black", system-ui, sans-serif;
+  --body: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+html, body { height: 100%; margin: 0; overflow: hidden; background: var(--night); color: var(--ink); overscroll-behavior: none; touch-action: none; }
+:root { padding: 0 !important; }
+#canvas { display: block; position: fixed; inset: 0; width: 100%; height: 100%; outline: none; }
+/* Loading screen: the cover art (title included) shown whole at the top, a blurred copy
+   filling the rest of the screen, and a loading bar along the bottom with a little trotro
+   that drives along it as it fills. */
+:root { --cover: url("cover_portrait.jpg"); }
+@media (min-aspect-ratio: 11/10) { :root { --cover: url("cover_landscape.jpg"); } }
+#status { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 10px; padding: 0 24px max(6vh, 28px); background: var(--night); font-family: var(--body); text-align: center; z-index: 2; overflow: hidden; isolation: isolate; }
+#status::before { content: ""; position: absolute; inset: -40px; background: var(--cover) center / cover no-repeat; filter: blur(18px) brightness(0.55); z-index: -3; }
+/* Fills the screen height where it can, trimming at most about a quarter of the poster's width
+   (the title stays whole) - the same fit the game's own cover screen uses. */
+#cover { position: absolute; inset: 0; width: 100%; height: 100%; background: var(--cover) center top / min(135vw, max(100vw, 67.1vh)) auto no-repeat; z-index: -2; }
+@media (min-aspect-ratio: 11/10) { #cover { background-size: min(135vw, max(100vw, 179vh)) auto; } }
+#status::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 32%; background: linear-gradient(transparent, rgba(8, 10, 20, 0.85)); z-index: -1; }
+#track { position: relative; width: min(340px, 80vw); padding-top: 48px; }
+#trotro { position: absolute; top: 0; left: 0%; width: 56px; transform: translateX(-50%); transition: left 0.2s linear; filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.5)); }
+#trotro img { width: 100%; display: block; animation: bob 0.35s ease-in-out infinite alternate; }
+@keyframes bob { from { transform: translateY(0) rotate(-1deg); } to { transform: translateY(-3px) rotate(1deg); } }
+#bar { width: 100%; height: 14px; border-radius: 7px; background: rgba(20, 30, 55, 0.85); border: 2px solid rgba(255, 255, 255, 0.3); overflow: hidden; box-sizing: border-box; }
+#fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--kente-red), var(--kente-gold) 50%, var(--kente-green)); transition: width 0.2s linear; }
+#tagline { margin: 0; color: var(--ink); font-size: 1rem; font-weight: 700; text-shadow: 0 1px 3px #000; }
+#label { font-size: 0.9rem; color: var(--ink); text-shadow: 0 1px 3px #000; font-variant-numeric: tabular-nums; margin: 0; }
+#notice { display: none; max-width: 340px; padding: 14px 16px; border-radius: 10px; background: #3b1f26; border: 1px solid var(--kente-red); color: var(--ink); line-height: 1.4; }
+/* After the download the engine prepares its graphics: the bar is full and the trotro
+   idles at the end, still bouncing (a transform animation keeps running even while the
+   engine blocks the page). */
+@media (prefers-reduced-motion: reduce) { #trotro img { animation: none; } }
+/* Portrait game: on a phone held sideways, ask for it to be turned. */
+#rotate { display: none; position: fixed; inset: 0; z-index: 3; background: var(--night); flex-direction: column; align-items: center; justify-content: center; gap: 14px; font-family: var(--body); text-align: center; padding-inline: 24px; }
+#rotate svg { width: 72px; height: 72px; }
+#rotate p { margin: 0; font-size: 1.1rem; }
+@media (orientation: landscape) and (pointer: coarse) { #rotate { display: flex; } }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito+Sans:wght@400;700&display=swap">
+
+<canvas id="canvas" tabindex="-1">Your browser does not support the canvas tag.</canvas>
+<div id="status">
+  <div id="cover" role="img" aria-label="Trotro Rush"></div>
+  <p id="tagline">Circle! Circle! Loading your trotro&hellip;</p>
+  <div id="track"><div id="trotro"><img src="trotro.png" alt=""></div><div id="bar"><div id="fill"></div></div></div>
+  <p id="label">Loading&hellip;</p>
+  <div id="notice" role="alert"></div>
+</div>
+<div id="rotate" role="alert">
+  <svg viewBox="0 0 72 72" aria-hidden="true"><rect x="22" y="8" width="28" height="52" rx="5" fill="none" stroke="#f2b705" stroke-width="4"/><circle cx="36" cy="52" r="2.5" fill="#f2b705"/><path d="M8 30a28 28 0 0 1 10-18" fill="none" stroke="#9aa6bd" stroke-width="3" stroke-linecap="round"/><path d="M18 6v7h-7" fill="none" stroke="#9aa6bd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <p>Turn your phone upright to drive.</p>
+</div>
+
+<script>
+// Music, played by the page rather than the game: the songs stream while you play instead
+// of being part of the game download, and they don't stutter when the game is busy.
+// The game calls trotroMusic('menu' | 'game' | 'pause' | 'resume' | 'mute' | 'unmute'). Browsers only allow
+// sound after a touch, so everything starts on the first tap; songs crossfade (Web Audio
+// gain, which also works on iPhones, where an audio element's volume is fixed).
+// The street background (owner's recordings) streams the same way, quietly under the music:
+// trotroAmbience('busy' | 'some' | 'quiet' | 'off' | 'mute' | 'unmute').
+(function () {
+  const VOLUME = 0.4;
+  // Per-recording levels: each sits well under the music (the "some" recording is ~10 dB
+  // louder than the other two, so it gets less).
+  const AMB_VOLUME = { busy: 0.6, some: 0.16, quiet: 0.38 };
+  const tracks = { menu: new Audio('music_menu.mp3'), game: new Audio('music_main.mp3'),
+                   busy: new Audio('amb_busy.mp3'), some: new Audio('amb_some.mp3'), quiet: new Audio('amb_quiet.mp3') };
+  let ctx = null, gains = {}, want = null, paused = false, muted = false, amb = 'off', ambMuted = false;
+  for (const k in tracks) { tracks[k].loop = true; tracks[k].preload = k in AMB_VOLUME ? 'none' : 'auto'; }
+  function level(k) {
+    if (k in AMB_VOLUME) return k === amb && !paused && !ambMuted ? AMB_VOLUME[k] : 0;
+    return k === want && !paused && !muted ? VOLUME : 0;
+  }
+  // Anything that shouldn't be heard is paused once it has faded out (it picks up where it
+  // left off). Some phones ignore the Web Audio volume, and there a "silent" song playing on
+  // underneath was heard on top of the other one.
+  function apply() {
+    if (!ctx) return;
+    const t = ctx.currentTime;
+    for (const k in tracks) {
+      const v = level(k);
+      if (v > 0 && tracks[k].paused) tracks[k].play().catch(() => {});
+      gains[k].gain.cancelScheduledValues(t);
+      gains[k].gain.setTargetAtTime(v, t, k in AMB_VOLUME ? 0.7 : 0.35);
+      if (v === 0 && !tracks[k].paused) {
+        setTimeout(() => { if (level(k) === 0) tracks[k].pause(); }, k in AMB_VOLUME ? 3000 : 1300);
+      }
+    }
+  }
+  function prime() {
+    if (ctx) {
+      // Already set up: make sure audio is running (iOS can leave it suspended).
+      if (ctx.state !== 'running') ctx.resume();
+      apply();
+      return;
+    }
+    try {
+      ctx = new (window.AudioContext || window.webkitAudioContext)();
+      for (const k in tracks) {
+        const g = ctx.createGain();
+        g.gain.value = 0;
+        ctx.createMediaElementSource(tracks[k]).connect(g).connect(ctx.destination);
+        gains[k] = g;
+        // Every track is started inside the tap (so later changes are allowed), and the ones
+        // not wanted yet are paused again straight away.
+        const p = tracks[k].play();
+        if (p) p.then(() => { if (level(k) === 0) tracks[k].pause(); }).catch(() => {});
+      }
+      ctx.resume();
+      apply();
+    } catch (e) { console.warn('music unavailable', e); }
+  }
+  // Phones count a tap as permission to play sound when the finger lifts (touchend /
+  // pointerup), not when it lands; try on every tap until a song is actually playing.
+  for (const ev of ['pointerup', 'touchend', 'click', 'keydown']) document.addEventListener(ev, prime, { capture: true });
+  document.addEventListener('visibilitychange', () => {
+    if (!ctx) return;
+    if (document.hidden) ctx.suspend(); else ctx.resume();
+  });
+  window.trotroMusicState = () => (want || 'none') + (paused ? ' (paused)' : '') + (muted ? ' (muted)' : '') + ' amb:' + amb + (ambMuted ? ' (muted)' : '') + (ctx ? ' ' + ctx.state : ' not started');
+  window.trotroMusic = (mode) => {
+    if (mode === 'pause') paused = true;
+    else if (mode === 'resume') paused = false;
+    else if (mode === 'mute') muted = true;
+    else if (mode === 'unmute') muted = false;
+    else want = mode;
+    apply();
+  };
+  // Debugging: what each track is doing right now.
+  window.trotroAudioDebug = () => JSON.stringify(Object.keys(tracks).map(k => [k, tracks[k].paused ? 'paused' : 'playing',
+    gains[k] ? +gains[k].gain.value.toFixed(3) : null, +tracks[k].currentTime.toFixed(1)]));
+  window.trotroAmbience = (mode) => {
+    if (mode === 'mute') ambMuted = true;
+    else if (mode === 'unmute') ambMuted = false;
+    else amb = mode;
+    apply();
+  };
+})();
+// Render at no more than 1.5x pixel density; the browser scales the canvas up. A phone's
+// full 3x canvas made every frame's copy-to-screen cost more than the game itself.
+(function () {
+  const cap = Math.min(window.devicePixelRatio || 1, 1.5);
+  try { Object.defineProperty(window, 'devicePixelRatio', { get: () => cap, configurable: true }); } catch (e) {}
+})();
+// The game files are larger than one Artifact file may be, so they are published gzipped
+// and split into parts. Godot fetches "index.wasm" / "index.pck"; this rebuilds each one
+// from its parts as a stream, so Godot's own progress tracking still works.
+const PARTS = {"index.wasm": {"parts": 1, "size": 39514754, "type": "application/wasm"}, "index.pck": {"parts": 2, "size": 18840668, "type": "application/octet-stream"}};
+const realFetch = window.fetch.bind(window);
+window.fetch = function (input, init) {
+  const url = typeof input === 'string' ? input : (input && input.url) || '';
+  const name = url.split('?')[0].split('/').pop();
+  const p = PARTS[name];
+  if (!p) return realFetch(input, init);
+  let i = 0, reader = null;
+  const joined = new ReadableStream({
+    async pull(ctrl) {
+      while (true) {
+        if (!reader) {
+          if (i >= p.parts) { ctrl.close(); return; }
+          const r = await realFetch(`${name}.gz.${i}.wasm`);
+          if (!r.ok) throw new Error(`Could not download ${name} part ${i + 1} (HTTP ${r.status}). Check your connection and reload.`);
+          reader = r.body.getReader();
+          i++;
+        }
+        const { done, value } = await reader.read();
+        if (done) { reader = null; continue; }
+        ctrl.enqueue(value);
+        return;
+      }
+    }
+  });
+  const body = joined.pipeThrough(new DecompressionStream('gzip'));
+  return Promise.resolve(new Response(body, { status: 200, headers: { 'Content-Type': p.type, 'Content-Length': String(p.size) } }));
+};
+</script>
+<script src="index.js"></script>
+<script>
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":18840668,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[]};
+const engine = new Engine(GODOT_CONFIG);
+(function () {
+  const status = document.getElementById('status');
+  const fill = document.getElementById('fill');
+  const label = document.getElementById('label');
+  const notice = document.getElementById('notice');
+  function fail(err) {
+    console.error(err);
+    notice.textContent = (err && err.message) ? err.message : String(err);
+    notice.style.display = 'block';
+    label.textContent = 'The game could not start.';
+  }
+  const missing = Engine.getMissingFeatures({ threads: false });
+  if (typeof DecompressionStream === 'undefined') missing.push('DecompressionStream (update your browser)');
+  if (missing.length) { fail(new Error('This browser is missing: ' + missing.join(', '))); return; }
+  engine.startGame({
+    onProgress: function (current, total) {
+      if (current > 0 && total > 0) {
+        const pct = Math.min(100, Math.round(current / total * 100));
+        fill.style.width = pct + '%';
+        document.getElementById('trotro').style.left = pct + '%';
+        // Owner: no download sizes or numbers on the loading screen, just the bar and trotro.
+      }
+    },
+  }).then(() => {
+    // Downloaded. The engine now prepares the road's graphics (first visit: a little
+    // while); the game calls trotroReady() once it has actually drawn.
+    label.textContent = 'Setting up the road\u2026';
+    fill.style.width = '100%';
+    document.getElementById('trotro').style.left = '100%';
+    const done = () => { if (status.isConnected) status.remove(); };
+    window.trotroReady = done;
+    setTimeout(done, 180000); // never leave the cover up for good
+  }, fail);
+}());
+</script>

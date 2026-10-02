@@ -1,0 +1,222 @@
+{
+  "apartment_block_large": {
+    "depth": 6.98,
+    "end": "res://assets/buildings/kit/apartment_block_large_end.png",
+    "end_wall_left": 0.47,
+    "end_width": 7.89,
+    "length": 39.75,
+    "ridge_height": 11.38,
+    "roof_color": "6e5243",
+    "side": "res://assets/buildings/kit/apartment_block_large_side.png",
+    "wall_height": 9.6
+  },
+  "apartment_block_medium": {
+    "depth": 9.19,
+    "end": "res://assets/buildings/kit/apartment_block_medium_end.png",
+    "end_wall_left": 0.69,
+    "end_width": 10.56,
+    "length": 34.55,
+    "ridge_height": 11.68,
+    "roof_color": "6f4d42",
+    "side": "res://assets/buildings/kit/apartment_block_medium_side.png",
+    "wall_height": 9.2
+  },
+  "chop_bar_local_food": {
+    "depth": 6.47,
+    "end": "res://assets/buildings/kit/chop_bar_local_food_end.png",
+    "end_wall_left": 0.31,
+    "end_width": 7.1,
+    "length": 20.55,
+    "ridge_height": 5.72,
+    "roof_color": "a85740",
+    "side": "res://assets/buildings/kit/chop_bar_local_food_side.png",
+    "wall_height": 3.8
+  },
+  "church": {
+    "depth": 7.3,
+    "end": "res://assets/buildings/kit/church_end.png",
+    "end_wall_left": 0.38,
+    "end_width": 8.07,
+    "length": 26.98,
+    "ridge_height": 7.7,
+    "roof_color": "bd6a53",
+    "side": "res://assets/buildings/kit/church_side.png",
+    "wall_height": 5.2
+  },
+  "commercial_block_two_storey": {
+    "depth": 7.55,
+    "end": "res://assets/buildings/kit/commercial_block_two_storey_end.png",
+    "end_wall_left": 0.52,
+    "end_width": 8.59,
+    "length": 23.17,
+    "ridge_height": 9.08,
+    "roof_color": "5c6258",
+    "side": "res://assets/buildings/kit/commercial_block_two_storey_side.png",
+    "wall_height": 7.0
+  },
+  "commercial_block_two_storey_alt": {
+    "depth": 6.01,
+    "end": "res://assets/buildings/kit/commercial_block_two_storey_alt_end.png",
+    "end_wall_left": 0.63,
+    "end_width": 7.32,
+    "length": 29.54,
+    "ridge_height": 8.58,
+    "roof_color": "785859",
+    "side": "res://assets/buildings/kit/commercial_block_two_storey_alt_side.png",
+    "wall_height": 7.0
+  },
+  "compound_house_large": {
+    "depth": 5.03,
+    "end": "res://assets/buildings/kit/compound_house_large_end.png",
+    "end_wall_left": 0.9,
+    "end_width": 6.85,
+    "length": 18.37,
+    "ridge_height": 5.42,
+    "roof_color": "b85d39",
+    "side": "res://assets/buildings/kit/compound_house_large_side.png",
+    "wall_height": 3.6
+  },
+  "compound_house_large_alt": {
+    "depth": 4.32,
+    "end": "res://assets/buildings/kit/compound_house_large_alt_end.png",
+    "end_wall_left": 0.43,
+    "end_width": 5.25,
+    "length": 20.87,
+    "ridge_height": 4.84,
+    "roof_color": "904548",
+    "side": "res://assets/buildings/kit/compound_house_large_alt_side.png",
+    "wall_height": 3.6
+  },
+  "compound_house_small": {
+    "depth": 4.47,
+    "end": "res://assets/buildings/kit/compound_house_small_end.png",
+    "end_wall_left": 0.51,
+    "end_width": 5.47,
+    "length": 23.21,
+    "ridge_height": 5.02,
+    "roof_color": "69423d",
+    "side": "res://assets/buildings/kit/compound_house_small_side.png",
+    "wall_height": 3.4
+  },
+  "drinking_spot_pub": {
+    "depth": 5.59,
+    "end": "res://assets/buildings/kit/drinking_spot_pub_end.png",
+    "end_wall_left": 0.17,
+    "end_width": 5.93,
+    "length": 24.25,
+    "ridge_height": 4.98,
+    "roof_color": "574a45",
+    "side": "res://assets/buildings/kit/drinking_spot_pub_side.png",
+    "wall_height": 3.6
+  },
+  "long_shop_row": {
+    "depth": 4.31,
+    "end": "res://assets/buildings/kit/long_shop_row_end.png",
+    "end_wall_left": 0.46,
+    "end_width": 5.29,
+    "length": 21.62,
+    "ridge_height": 5.08,
+    "roof_color": "8a4f40",
+    "side": "res://assets/buildings/kit/long_shop_row_side.png",
+    "wall_height": 3.8
+  },
+  "mechanic_auto_shop": {
+    "depth": 5.83,
+    "end": "res://assets/buildings/kit/mechanic_auto_shop_end.png",
+    "end_wall_left": 0.35,
+    "end_width": 6.58,
+    "length": 22.32,
+    "ridge_height": 5.87,
+    "roof_color": "565b60",
+    "side": "res://assets/buildings/kit/mechanic_auto_shop_side.png",
+    "wall_height": 4.2
+  },
+  "momo_stall": {
+    "depth": 4.17,
+    "end": "res://assets/buildings/kit/momo_stall_end.png",
+    "end_wall_left": 0.33,
+    "end_width": 4.94,
+    "length": 13.54,
+    "ridge_height": 5.01,
+    "roof_color": "cba62e",
+    "side": "res://assets/buildings/kit/momo_stall_side.png",
+    "wall_height": 3.8
+  },
+  "pharmacy": {
+    "depth": 4.37,
+    "end": "res://assets/buildings/kit/pharmacy_end.png",
+    "end_wall_left": 0.42,
+    "end_width": 4.99,
+    "length": 18.47,
+    "ridge_height": 4.99,
+    "roof_color": "30865f",
+    "side": "res://assets/buildings/kit/pharmacy_side.png",
+    "wall_height": 3.8
+  },
+  "provision_shop": {
+    "depth": 5.5,
+    "end": "res://assets/buildings/kit/provision_shop_end.png",
+    "end_wall_left": 0.28,
+    "end_width": 6.09,
+    "length": 20.63,
+    "ridge_height": 5.01,
+    "roof_color": "7b3b36",
+    "side": "res://assets/buildings/kit/provision_shop_side.png",
+    "wall_height": 3.6
+  },
+  "roadside_market_structure": {
+    "depth": 5.15,
+    "end": "res://assets/buildings/kit/roadside_market_structure_end.png",
+    "end_wall_left": 0.41,
+    "end_width": 5.97,
+    "length": 21.56,
+    "ridge_height": 5.76,
+    "roof_color": "854431",
+    "side": "res://assets/buildings/kit/roadside_market_structure_side.png",
+    "wall_height": 4.0
+  },
+  "school": {
+    "depth": 7.25,
+    "end": "res://assets/buildings/kit/school_end.png",
+    "end_wall_left": 0.47,
+    "end_width": 8.21,
+    "length": 29.62,
+    "ridge_height": 9.46,
+    "roof_color": "72372a",
+    "side": "res://assets/buildings/kit/school_side.png",
+    "wall_height": 7.0
+  },
+  "stop_fitter": {
+    "depth": 4.72,
+    "end": "res://assets/buildings/kit/stop_fitter_end.png",
+    "end_wall_left": 0.56,
+    "end_width": 5.86,
+    "length": 13.93,
+    "ridge_height": 5.8,
+    "roof_color": "7a5e48",
+    "side": "res://assets/buildings/kit/stop_fitter_side.png",
+    "wall_height": 4.2
+  },
+  "telecom_electronics": {
+    "depth": 4.96,
+    "end": "res://assets/buildings/kit/telecom_electronics_end.png",
+    "end_wall_left": 0.18,
+    "end_width": 5.34,
+    "length": 17.22,
+    "ridge_height": 5.24,
+    "roof_color": "095fb3",
+    "side": "res://assets/buildings/kit/telecom_electronics_side.png",
+    "wall_height": 4.0
+  },
+  "unfinished_concrete_building": {
+    "depth": 4.58,
+    "end": "res://assets/buildings/kit/unfinished_concrete_building_end.png",
+    "end_wall_left": 0.34,
+    "end_width": 5.32,
+    "length": 19.94,
+    "ridge_height": 4.93,
+    "roof_color": "913e34",
+    "side": "res://assets/buildings/kit/unfinished_concrete_building_side.png",
+    "wall_height": 3.6
+  }
+}

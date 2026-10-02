@@ -1,0 +1,21 @@
+{
+  "_comment": "Image generation settings for Trotro Rush. The API key is NEVER stored here — see README.md.",
+  "model": "gpt-image-2.5-flare",
+  "quality": "low",
+  "budget_usd": 4.00,
+  "reserve_usd": 0.50,
+  "_reserve_comment": "Kept back for fixes/retries. Only jobs with priority 1 may dip into it.",
+  "pricing_per_million_tokens": {
+    "_source": "developers.openai.com/api/docs/models/gpt-image-2.5-flare (2026-09-30): image input $8, output $30. Text input rate not listed, so input is conservatively billed at the image rate.",
+    "input": 8.00,
+    "output": 30.00
+  },
+  "_estimate_comment": "OpenAI publishes no per-image price for GPT Image 2.5, so before any real call has been made each image is assumed to cost this much (about 3-5x third-party estimates of ~$0.005-0.006 for low quality). After real calls, estimates use 1.3x the highest actual cost seen for the same size and mode.",
+  "fallback_estimate_usd": {
+    "generate": 0.03,
+    "edit": 0.04
+  },
+  "request_transparent_background": true,
+  "chroma_key_color": "#FF00FF",
+  "timeout_seconds": 180
+}

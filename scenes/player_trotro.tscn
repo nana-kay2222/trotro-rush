@@ -1,0 +1,30 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/player_trotro.gd" id="1_krlub"]
+[ext_resource type="Texture2D" path="res://assets/vehicles/player_trotro/shadow_blob.png" id="2_t61bt"]
+[ext_resource type="Texture2D" path="res://assets/vehicles/player_trotro/player_trotro_rear.png" id="3_ffw46"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1gds"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+albedo_color = Color(1, 1, 1, 0.65)
+albedo_texture = ExtResource("2_t61bt")
+
+[sub_resource type="QuadMesh" id="QuadMesh_g4bcv"]
+size = Vector2(1.9, 4.4)
+
+[node name="PlayerTrotro" type="Node3D" unique_id=2043577764]
+script = ExtResource("1_krlub")
+
+[node name="ContactShadow" type="MeshInstance3D" parent="." unique_id=2021311791]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.03, -1.95)
+material_override = SubResource("StandardMaterial3D_a1gds")
+mesh = SubResource("QuadMesh_g4bcv")
+
+[node name="VisualHolder" type="Node3D" parent="." unique_id=223264949]
+
+[node name="Sprite" type="Sprite3D" parent="VisualHolder" unique_id=299660937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.98, 0)
+pixel_size = 0.00165
+texture = ExtResource("3_ffw46")

@@ -1,0 +1,381 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/environment/curb_concrete.png" id="1_int3q"]
+[ext_resource type="Texture2D" path="res://assets/buildings/mosque/mosque_side_wall_modular.png" id="2_asg2i"]
+[ext_resource type="Texture2D" path="res://assets/buildings/mosque/roof_green_corrugated.png" id="3_wdwui"]
+[ext_resource type="Texture2D" path="res://assets/buildings/mosque/mosque_wall_bay_single.png" id="4_4kuen"]
+[ext_resource type="Texture2D" path="res://assets/buildings/mosque/mosque_front_facade_modular.png" id="5_787ep"]
+[ext_resource type="Texture2D" path="res://assets/buildings/mosque/mosque_minaret.png" id="6_2mita"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tk6pd"]
+cull_mode = 2
+albedo_texture = ExtResource("1_int3q")
+roughness = 0.92
+uv1_scale = Vector3(4, 10, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r17n0"]
+size = Vector3(12.5, 0.25, 27)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_25e6h"]
+cull_mode = 2
+albedo_color = Color(0.68, 0.62, 0.5, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="BoxMesh_lxw41"]
+size = Vector3(9.5, 4.8, 18)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lauw0"]
+cull_mode = 2
+albedo_texture = ExtResource("2_asg2i")
+roughness = 0.85
+
+[sub_resource type="QuadMesh" id="QuadMesh_d2ydq"]
+size = Vector2(18, 4.8)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2tsdd"]
+cull_mode = 2
+albedo_color = Color(0.1, 0.38, 0.3, 1)
+roughness = 0.85
+
+[sub_resource type="BoxMesh" id="BoxMesh_srg4y"]
+size = Vector3(0.32, 4.8, 0.44)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t0wwv"]
+size = Vector3(0.32, 4.8, 0.44)
+
+[sub_resource type="BoxMesh" id="BoxMesh_43qnc"]
+size = Vector3(0.32, 4.8, 0.44)
+
+[sub_resource type="BoxMesh" id="BoxMesh_e3e73"]
+size = Vector3(0.32, 4.8, 0.44)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8allj"]
+size = Vector3(0.32, 4.8, 0.44)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ywktc"]
+size = Vector3(9.5, 1.4, 0.15)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4mkpc"]
+cull_mode = 2
+albedo_texture = ExtResource("3_wdwui")
+roughness = 0.75
+uv1_scale = Vector3(18, 4, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ua60u"]
+size = Vector3(5.5, 0.08, 19.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7a2f5"]
+size = Vector3(0.35, 0.12, 19.5)
+
+[sub_resource type="PrismMesh" id="PrismMesh_gy71t"]
+size = Vector3(9.5, 1.9, 0.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dee8l"]
+size = Vector3(10.5, 5.4, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_go1sm"]
+size = Vector3(10.55, 1.4, 6.05)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xw58l"]
+cull_mode = 2
+albedo_texture = ExtResource("4_4kuen")
+roughness = 0.85
+
+[sub_resource type="QuadMesh" id="QuadMesh_nm0vh"]
+size = Vector2(6, 5.4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xgx0i"]
+cull_mode = 2
+albedo_texture = ExtResource("5_787ep")
+roughness = 0.85
+
+[sub_resource type="QuadMesh" id="QuadMesh_k5khv"]
+size = Vector2(8, 5.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t6lhi"]
+size = Vector3(10.8, 0.45, 6.3)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_desb1"]
+top_radius = 2.4
+bottom_radius = 2.4
+height = 1.1
+radial_segments = 8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t21hf"]
+cull_mode = 2
+albedo_color = Color(0.08, 0.42, 0.32, 1)
+metallic = 0.2
+roughness = 0.35
+
+[sub_resource type="SphereMesh" id="SphereMesh_ooc2y"]
+radius = 2.5
+height = 3.2
+radial_segments = 16
+rings = 8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cgfmx"]
+cull_mode = 2
+albedo_color = Color(0.96, 0.8, 0.24, 1)
+metallic = 0.85
+roughness = 0.25
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_3blcg"]
+top_radius = 0.04
+bottom_radius = 0.18
+height = 1.4
+radial_segments = 6
+
+[sub_resource type="TorusMesh" id="TorusMesh_4edf2"]
+inner_radius = 0.22
+outer_radius = 0.38
+
+[sub_resource type="BoxMesh" id="BoxMesh_03087"]
+size = Vector3(2.5, 5.6, 2.5)
+
+[sub_resource type="QuadMesh" id="QuadMesh_vjcvg"]
+size = Vector2(2.4, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0cjuc"]
+size = Vector3(2.55, 1.4, 2.55)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5anma"]
+size = Vector3(2.65, 0.35, 2.65)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_7uq6q"]
+top_radius = 1.05
+bottom_radius = 1.15
+height = 6.8
+radial_segments = 8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ilejr"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("6_2mita")
+roughness = 0.85
+
+[sub_resource type="QuadMesh" id="QuadMesh_7gn5l"]
+size = Vector2(2.1, 6)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dmhma"]
+top_radius = 1.7
+bottom_radius = 1.5
+height = 0.4
+radial_segments = 8
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vhxqq"]
+top_radius = 1.7
+bottom_radius = 1.7
+height = 0.8
+radial_segments = 8
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_a3ba7"]
+top_radius = 0.95
+bottom_radius = 0.95
+height = 2.2
+radial_segments = 8
+
+[sub_resource type="SphereMesh" id="SphereMesh_c2wo7"]
+radius = 1.15
+height = 2.0
+radial_segments = 12
+rings = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_voc25"]
+top_radius = 0.03
+bottom_radius = 0.12
+height = 1.2
+radial_segments = 6
+
+[sub_resource type="TorusMesh" id="TorusMesh_3q6kt"]
+inner_radius = 0.14
+outer_radius = 0.24
+
+[node name="Mosque" type="Node3D" unique_id=1775505574]
+
+[node name="FoundationPlinth" type="MeshInstance3D" parent="." unique_id=1302352901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+material_override = SubResource("StandardMaterial3D_tk6pd")
+mesh = SubResource("BoxMesh_r17n0")
+
+[node name="PrayerHallGeometry" type="MeshInstance3D" parent="." unique_id=591105212]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.65, -3.5)
+material_override = SubResource("StandardMaterial3D_25e6h")
+mesh = SubResource("BoxMesh_lxw41")
+
+[node name="PrayerHallFacade" type="MeshInstance3D" parent="." unique_id=1811551785]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -4.77, 2.65, -3.5)
+material_override = SubResource("StandardMaterial3D_lauw0")
+mesh = SubResource("QuadMesh_d2ydq")
+
+[node name="Pilaster_-115" type="MeshInstance3D" parent="." unique_id=1271998064]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9, 2.65, -11.5)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("BoxMesh_srg4y")
+
+[node name="Pilaster_-78" type="MeshInstance3D" parent="." unique_id=1211423785]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9, 2.65, -7.8)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("BoxMesh_t0wwv")
+
+[node name="Pilaster_-35" type="MeshInstance3D" parent="." unique_id=180353043]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9, 2.65, -3.5)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("BoxMesh_43qnc")
+
+[node name="Pilaster_8" type="MeshInstance3D" parent="." unique_id=385881680]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9, 2.65, 0.8)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("BoxMesh_e3e73")
+
+[node name="Pilaster_45" type="MeshInstance3D" parent="." unique_id=723579276]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9, 2.65, 4.5)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("BoxMesh_8allj")
+
+[node name="@MeshInstance3D@79" type="MeshInstance3D" parent="." unique_id=1932643301]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, -12.5)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("BoxMesh_ywktc")
+
+[node name="RoofSlope_Roadside" type="MeshInstance3D" parent="." unique_id=810285372]
+transform = Transform3D(0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 0, 0, 0, 1, -2.3, 5.7, -3.5)
+material_override = SubResource("StandardMaterial3D_4mkpc")
+mesh = SubResource("BoxMesh_ua60u")
+
+[node name="RoofSlope_Back" type="MeshInstance3D" parent="." unique_id=2107892887]
+transform = Transform3D(0.9396926, 0.34202012, 0, -0.34202012, 0.9396926, 0, 0, 0, 1, 2.3, 5.7, -3.5)
+material_override = SubResource("StandardMaterial3D_4mkpc")
+mesh = SubResource("BoxMesh_ua60u")
+
+[node name="RoofRidge" type="MeshInstance3D" parent="." unique_id=1024687998]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.65, -3.5)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("BoxMesh_7a2f5")
+
+[node name="Gable_Back" type="MeshInstance3D" parent="." unique_id=78786001]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, -12.5)
+material_override = SubResource("StandardMaterial3D_25e6h")
+mesh = SubResource("PrismMesh_gy71t")
+
+[node name="EntrancePavilion" type="MeshInstance3D" parent="." unique_id=450978670]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.95, 7.5)
+material_override = SubResource("StandardMaterial3D_25e6h")
+mesh = SubResource("BoxMesh_dee8l")
+
+[node name="@MeshInstance3D@80" type="MeshInstance3D" parent="." unique_id=1608489760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 7.5)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("BoxMesh_go1sm")
+
+[node name="PavilionRoadFacade" type="MeshInstance3D" parent="." unique_id=1877578359]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.27, 2.95, 7.5)
+material_override = SubResource("StandardMaterial3D_xw58l")
+mesh = SubResource("QuadMesh_nm0vh")
+
+[node name="ApproachEntrancePortal" type="MeshInstance3D" parent="." unique_id=847170205]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15, 2.95, 10.56)
+material_override = SubResource("StandardMaterial3D_xgx0i")
+mesh = SubResource("QuadMesh_k5khv")
+
+[node name="PavilionParapet" type="MeshInstance3D" parent="." unique_id=1187933718]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.8, 7.5)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("BoxMesh_t6lhi")
+
+[node name="CentralDome" type="Node3D" parent="." unique_id=1896048656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 5.9, 7.5)
+
+[node name="Drum" type="MeshInstance3D" parent="CentralDome" unique_id=2129307446]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("CylinderMesh_desb1")
+
+[node name="DomeHemisphere" type="MeshInstance3D" parent="CentralDome" unique_id=195788636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2, 0)
+material_override = SubResource("StandardMaterial3D_t21hf")
+mesh = SubResource("SphereMesh_ooc2y")
+
+[node name="Spire" type="MeshInstance3D" parent="CentralDome" unique_id=1587639596]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.2, 0)
+material_override = SubResource("StandardMaterial3D_cgfmx")
+mesh = SubResource("CylinderMesh_3blcg")
+
+[node name="Crescent" type="MeshInstance3D" parent="CentralDome" unique_id=1654336520]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 5.1, 0)
+material_override = SubResource("StandardMaterial3D_cgfmx")
+mesh = SubResource("TorusMesh_4edf2")
+
+[node name="MinaretTower" type="Node3D" parent="." unique_id=1484420743]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2, 0, 9.5)
+
+[node name="Tier1_Base" type="MeshInstance3D" parent="MinaretTower" unique_id=436004670]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8, 0)
+material_override = SubResource("StandardMaterial3D_25e6h")
+mesh = SubResource("BoxMesh_03087")
+
+[node name="Tier1_ApproachFacade" type="MeshInstance3D" parent="MinaretTower" unique_id=729638338]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.4, 1.28)
+material_override = SubResource("StandardMaterial3D_xw58l")
+mesh = SubResource("QuadMesh_vjcvg")
+
+[node name="Tier1_RoadFacade" type="MeshInstance3D" parent="MinaretTower" unique_id=1760756673]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.28, 3.4, 0)
+material_override = SubResource("StandardMaterial3D_xw58l")
+mesh = SubResource("QuadMesh_vjcvg")
+
+[node name="Tier1_Wainscot" type="MeshInstance3D" parent="MinaretTower" unique_id=991454324]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("BoxMesh_0cjuc")
+
+[node name="Tier1_Cornice" type="MeshInstance3D" parent="MinaretTower" unique_id=441929595]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.7, 0)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("BoxMesh_5anma")
+
+[node name="Tier2_Shaft" type="MeshInstance3D" parent="MinaretTower" unique_id=1069242257]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.2, 0)
+material_override = SubResource("StandardMaterial3D_25e6h")
+mesh = SubResource("CylinderMesh_7uq6q")
+
+[node name="MinaretRoadFretwork" type="MeshInstance3D" parent="MinaretTower" unique_id=1875078508]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.18, 9.2, 0)
+material_override = SubResource("StandardMaterial3D_ilejr")
+mesh = SubResource("QuadMesh_7gn5l")
+
+[node name="MinaretApproachFretwork" type="MeshInstance3D" parent="MinaretTower" unique_id=1573522358]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.2, 1.18)
+material_override = SubResource("StandardMaterial3D_ilejr")
+mesh = SubResource("QuadMesh_7gn5l")
+
+[node name="BalconyFloor" type="MeshInstance3D" parent="MinaretTower" unique_id=1368913664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.7, 0)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("CylinderMesh_dmhma")
+
+[node name="BalconyRailing" type="MeshInstance3D" parent="MinaretTower" unique_id=1891061701]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.2, 0)
+material_override = SubResource("StandardMaterial3D_2tsdd")
+mesh = SubResource("CylinderMesh_vhxqq")
+
+[node name="LanternCore" type="MeshInstance3D" parent="MinaretTower" unique_id=1792206498]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.3, 0)
+material_override = SubResource("StandardMaterial3D_25e6h")
+mesh = SubResource("CylinderMesh_a3ba7")
+
+[node name="CupolaDome" type="MeshInstance3D" parent="MinaretTower" unique_id=1552126510]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16.2, 0)
+material_override = SubResource("StandardMaterial3D_t21hf")
+mesh = SubResource("SphereMesh_c2wo7")
+
+[node name="@MeshInstance3D@81" type="MeshInstance3D" parent="MinaretTower" unique_id=1595605858]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 17.6, 0)
+material_override = SubResource("StandardMaterial3D_cgfmx")
+mesh = SubResource("CylinderMesh_voc25")
+
+[node name="@MeshInstance3D@82" type="MeshInstance3D" parent="MinaretTower" unique_id=1987995692]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 18.3, 0)
+material_override = SubResource("StandardMaterial3D_cgfmx")
+mesh = SubResource("TorusMesh_3q6kt")

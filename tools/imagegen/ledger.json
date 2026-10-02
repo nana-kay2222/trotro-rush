@@ -1,0 +1,3298 @@
+{
+  "entries": [
+    {
+      "time": "2026-09-30 01:34:43",
+      "job": "taxi_left_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.04,
+      "actual_usd": 0.01488,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1125,
+        "output_tokens": 196,
+        "total_tokens": 1321
+      },
+      "raw": "tools\\imagegen\\raw\\taxi_left_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 01:36:16",
+      "job": "sedan_left_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0193,
+      "actual_usd": 0.01386,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 997,
+        "output_tokens": 196,
+        "total_tokens": 1193
+      },
+      "raw": "tools\\imagegen\\raw\\sedan_left_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 01:36:34",
+      "job": "suv_left_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0193,
+      "actual_usd": 0.01462,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1093,
+        "output_tokens": 196,
+        "total_tokens": 1289
+      },
+      "raw": "tools\\imagegen\\raw\\suv_left_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 01:36:53",
+      "job": "pickup_left_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0193,
+      "actual_usd": 0.01411,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1029,
+        "output_tokens": 196,
+        "total_tokens": 1225
+      },
+      "raw": "tools\\imagegen\\raw\\pickup_left_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 01:37:12",
+      "job": "van_left_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0193,
+      "actual_usd": 0.01462,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1093,
+        "output_tokens": 196,
+        "total_tokens": 1289
+      },
+      "raw": "tools\\imagegen\\raw\\van_left_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 01:37:30",
+      "job": "rival_trotro_left_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0193,
+      "actual_usd": 0.01565,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1221,
+        "output_tokens": 196,
+        "total_tokens": 1417
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_left_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 01:39:11",
+      "job": "taxi_right_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0203,
+      "actual_usd": 0.01488,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1125,
+        "output_tokens": 196,
+        "total_tokens": 1321
+      },
+      "raw": "tools\\imagegen\\raw\\taxi_right_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 01:39:35",
+      "job": "sedan_right_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0203,
+      "actual_usd": 0.01386,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 997,
+        "output_tokens": 196,
+        "total_tokens": 1193
+      },
+      "raw": "tools\\imagegen\\raw\\sedan_right_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 01:39:51",
+      "job": "suv_right_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0203,
+      "actual_usd": 0.01462,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1093,
+        "output_tokens": 196,
+        "total_tokens": 1289
+      },
+      "raw": "tools\\imagegen\\raw\\suv_right_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 01:40:05",
+      "job": "pickup_right_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0203,
+      "actual_usd": 0.01411,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1029,
+        "output_tokens": 196,
+        "total_tokens": 1225
+      },
+      "raw": "tools\\imagegen\\raw\\pickup_right_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 01:40:23",
+      "job": "van_right_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0203,
+      "actual_usd": 0.01462,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1093,
+        "output_tokens": 196,
+        "total_tokens": 1289
+      },
+      "raw": "tools\\imagegen\\raw\\van_right_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 01:40:38",
+      "job": "rival_trotro_right_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0203,
+      "actual_usd": 0.01565,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1221,
+        "output_tokens": 196,
+        "total_tokens": 1417
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_right_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 01:46:31",
+      "job": "van_right_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0203,
+      "actual_usd": 0.01462,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1092,
+        "output_tokens": 196,
+        "total_tokens": 1288
+      },
+      "raw": "tools\\imagegen\\raw\\van_right_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 01:46:46",
+      "job": "tex_asphalt_accra",
+      "mode": "generate",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.03,
+      "actual_usd": 0.00674,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 108,
+        "output_tokens": 196,
+        "total_tokens": 304
+      },
+      "raw": "tools\\imagegen\\raw\\tex_asphalt_accra.png"
+    },
+    {
+      "time": "2026-09-30 01:46:59",
+      "job": "tex_ground_dust",
+      "mode": "generate",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0088,
+      "actual_usd": 0.00678,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 112,
+        "output_tokens": 196,
+        "total_tokens": 308
+      },
+      "raw": "tools\\imagegen\\raw\\tex_ground_dust.png"
+    },
+    {
+      "time": "2026-09-30 01:47:10",
+      "job": "tex_pavement_slabs",
+      "mode": "generate",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0088,
+      "actual_usd": 0.00659,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 89,
+        "output_tokens": 196,
+        "total_tokens": 285
+      },
+      "raw": "tools\\imagegen\\raw\\tex_pavement_slabs.png"
+    },
+    {
+      "time": "2026-09-30 01:47:20",
+      "job": "skyline_accra",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.03,
+      "actual_usd": 0.00574,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 125,
+        "output_tokens": 158,
+        "total_tokens": 283
+      },
+      "raw": "tools\\imagegen\\raw\\skyline_accra.png"
+    },
+    {
+      "time": "2026-09-30 01:47:30",
+      "job": "passengers_hailing_a",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0075,
+      "actual_usd": 0.00625,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 189,
+        "output_tokens": 158,
+        "total_tokens": 347
+      },
+      "raw": "tools\\imagegen\\raw\\passengers_hailing_a.png"
+    },
+    {
+      "time": "2026-09-30 01:47:42",
+      "job": "pothole_decal",
+      "mode": "generate",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0088,
+      "actual_usd": 0.0071,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 152,
+        "output_tokens": 196,
+        "total_tokens": 348
+      },
+      "raw": "tools\\imagegen\\raw\\pothole_decal.png"
+    },
+    {
+      "time": "2026-09-30 01:55:29",
+      "job": "bld_pharmacy_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.04,
+      "actual_usd": 0.0175,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1595,
+        "output_tokens": 158,
+        "total_tokens": 1753
+      },
+      "raw": "tools\\imagegen\\raw\\bld_pharmacy_side.png"
+    },
+    {
+      "time": "2026-09-30 01:55:46",
+      "job": "bld_pharmacy_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0203,
+      "actual_usd": 0.01851,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1579,
+        "output_tokens": 196,
+        "total_tokens": 1775
+      },
+      "raw": "tools\\imagegen\\raw\\bld_pharmacy_end.png"
+    },
+    {
+      "time": "2026-09-30 01:57:24",
+      "job": "bld_compound_house_large_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.0175,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1595,
+        "output_tokens": 158,
+        "total_tokens": 1753
+      },
+      "raw": "tools\\imagegen\\raw\\bld_compound_house_large_side.png"
+    },
+    {
+      "time": "2026-09-30 01:57:39",
+      "job": "bld_compound_house_large_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.01851,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1579,
+        "output_tokens": 196,
+        "total_tokens": 1775
+      },
+      "raw": "tools\\imagegen\\raw\\bld_compound_house_large_end.png"
+    },
+    {
+      "time": "2026-09-30 01:57:53",
+      "job": "bld_provision_shop_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.01755,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1601,
+        "output_tokens": 158,
+        "total_tokens": 1759
+      },
+      "raw": "tools\\imagegen\\raw\\bld_provision_shop_side.png"
+    },
+    {
+      "time": "2026-09-30 01:58:06",
+      "job": "bld_provision_shop_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.01856,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1585,
+        "output_tokens": 196,
+        "total_tokens": 1781
+      },
+      "raw": "tools\\imagegen\\raw\\bld_provision_shop_end.png"
+    },
+    {
+      "time": "2026-09-30 01:58:19",
+      "job": "bld_long_shop_row_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.0175,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1595,
+        "output_tokens": 158,
+        "total_tokens": 1753
+      },
+      "raw": "tools\\imagegen\\raw\\bld_long_shop_row_side.png"
+    },
+    {
+      "time": "2026-09-30 01:58:33",
+      "job": "bld_long_shop_row_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.01851,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1579,
+        "output_tokens": 196,
+        "total_tokens": 1775
+      },
+      "raw": "tools\\imagegen\\raw\\bld_long_shop_row_end.png"
+    },
+    {
+      "time": "2026-09-30 01:58:48",
+      "job": "bld_chop_bar_local_food_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.0175,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1595,
+        "output_tokens": 158,
+        "total_tokens": 1753
+      },
+      "raw": "tools\\imagegen\\raw\\bld_chop_bar_local_food_side.png"
+    },
+    {
+      "time": "2026-09-30 01:59:01",
+      "job": "bld_chop_bar_local_food_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.01851,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1579,
+        "output_tokens": 196,
+        "total_tokens": 1775
+      },
+      "raw": "tools\\imagegen\\raw\\bld_chop_bar_local_food_end.png"
+    },
+    {
+      "time": "2026-09-30 01:59:15",
+      "job": "bld_telecom_electronics_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.0175,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1595,
+        "output_tokens": 158,
+        "total_tokens": 1753
+      },
+      "raw": "tools\\imagegen\\raw\\bld_telecom_electronics_side.png"
+    },
+    {
+      "time": "2026-09-30 01:59:29",
+      "job": "bld_telecom_electronics_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.01851,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1579,
+        "output_tokens": 196,
+        "total_tokens": 1775
+      },
+      "raw": "tools\\imagegen\\raw\\bld_telecom_electronics_end.png"
+    },
+    {
+      "time": "2026-09-30 01:59:44",
+      "job": "bld_momo_stall_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.01755,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1601,
+        "output_tokens": 158,
+        "total_tokens": 1759
+      },
+      "raw": "tools\\imagegen\\raw\\bld_momo_stall_side.png"
+    },
+    {
+      "time": "2026-09-30 01:59:58",
+      "job": "bld_momo_stall_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.01856,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1585,
+        "output_tokens": 196,
+        "total_tokens": 1781
+      },
+      "raw": "tools\\imagegen\\raw\\bld_momo_stall_end.png"
+    },
+    {
+      "time": "2026-09-30 02:00:12",
+      "job": "bld_drinking_spot_pub_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.01755,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1601,
+        "output_tokens": 158,
+        "total_tokens": 1759
+      },
+      "raw": "tools\\imagegen\\raw\\bld_drinking_spot_pub_side.png"
+    },
+    {
+      "time": "2026-09-30 02:00:24",
+      "job": "bld_drinking_spot_pub_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.01856,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1585,
+        "output_tokens": 196,
+        "total_tokens": 1781
+      },
+      "raw": "tools\\imagegen\\raw\\bld_drinking_spot_pub_end.png"
+    },
+    {
+      "time": "2026-09-30 02:00:37",
+      "job": "bld_mechanic_auto_shop_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.01755,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1601,
+        "output_tokens": 158,
+        "total_tokens": 1759
+      },
+      "raw": "tools\\imagegen\\raw\\bld_mechanic_auto_shop_side.png"
+    },
+    {
+      "time": "2026-09-30 02:00:50",
+      "job": "bld_mechanic_auto_shop_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.01856,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1585,
+        "output_tokens": 196,
+        "total_tokens": 1781
+      },
+      "raw": "tools\\imagegen\\raw\\bld_mechanic_auto_shop_end.png"
+    },
+    {
+      "time": "2026-09-30 02:01:04",
+      "job": "bld_commercial_block_two_storey_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.01755,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1601,
+        "output_tokens": 158,
+        "total_tokens": 1759
+      },
+      "raw": "tools\\imagegen\\raw\\bld_commercial_block_two_storey_side.png"
+    },
+    {
+      "time": "2026-09-30 02:01:19",
+      "job": "bld_commercial_block_two_storey_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.01856,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1585,
+        "output_tokens": 196,
+        "total_tokens": 1781
+      },
+      "raw": "tools\\imagegen\\raw\\bld_commercial_block_two_storey_end.png"
+    },
+    {
+      "time": "2026-09-30 02:01:36",
+      "job": "bld_commercial_block_two_storey_alt_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.01755,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1601,
+        "output_tokens": 158,
+        "total_tokens": 1759
+      },
+      "raw": "tools\\imagegen\\raw\\bld_commercial_block_two_storey_alt_side.png"
+    },
+    {
+      "time": "2026-09-30 02:01:50",
+      "job": "bld_commercial_block_two_storey_alt_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.01856,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1585,
+        "output_tokens": 196,
+        "total_tokens": 1781
+      },
+      "raw": "tools\\imagegen\\raw\\bld_commercial_block_two_storey_alt_end.png"
+    },
+    {
+      "time": "2026-09-30 02:02:04",
+      "job": "bld_compound_house_small_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.01755,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1601,
+        "output_tokens": 158,
+        "total_tokens": 1759
+      },
+      "raw": "tools\\imagegen\\raw\\bld_compound_house_small_side.png"
+    },
+    {
+      "time": "2026-09-30 02:02:18",
+      "job": "bld_compound_house_small_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.01856,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1585,
+        "output_tokens": 196,
+        "total_tokens": 1781
+      },
+      "raw": "tools\\imagegen\\raw\\bld_compound_house_small_end.png"
+    },
+    {
+      "time": "2026-09-30 02:02:32",
+      "job": "bld_compound_house_large_alt_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.01748,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1593,
+        "output_tokens": 158,
+        "total_tokens": 1751
+      },
+      "raw": "tools\\imagegen\\raw\\bld_compound_house_large_alt_side.png"
+    },
+    {
+      "time": "2026-09-30 02:02:45",
+      "job": "bld_compound_house_large_alt_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.0185,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1577,
+        "output_tokens": 196,
+        "total_tokens": 1773
+      },
+      "raw": "tools\\imagegen\\raw\\bld_compound_house_large_alt_end.png"
+    },
+    {
+      "time": "2026-09-30 02:02:59",
+      "job": "bld_unfinished_concrete_building_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0228,
+      "actual_usd": 0.01795,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1651,
+        "output_tokens": 158,
+        "total_tokens": 1809
+      },
+      "raw": "tools\\imagegen\\raw\\bld_unfinished_concrete_building_side.png"
+    },
+    {
+      "time": "2026-09-30 02:03:13",
+      "job": "bld_unfinished_concrete_building_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0241,
+      "actual_usd": 0.01896,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1635,
+        "output_tokens": 196,
+        "total_tokens": 1831
+      },
+      "raw": "tools\\imagegen\\raw\\bld_unfinished_concrete_building_end.png"
+    },
+    {
+      "time": "2026-09-30 02:03:25",
+      "job": "bld_church_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0233,
+      "actual_usd": 0.0175,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1595,
+        "output_tokens": 158,
+        "total_tokens": 1753
+      },
+      "raw": "tools\\imagegen\\raw\\bld_church_side.png"
+    },
+    {
+      "time": "2026-09-30 02:03:42",
+      "job": "bld_church_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01851,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1579,
+        "output_tokens": 196,
+        "total_tokens": 1775
+      },
+      "raw": "tools\\imagegen\\raw\\bld_church_end.png"
+    },
+    {
+      "time": "2026-09-30 02:03:56",
+      "job": "bld_school_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0233,
+      "actual_usd": 0.0175,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1595,
+        "output_tokens": 158,
+        "total_tokens": 1753
+      },
+      "raw": "tools\\imagegen\\raw\\bld_school_side.png"
+    },
+    {
+      "time": "2026-09-30 02:04:16",
+      "job": "bld_school_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01851,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1579,
+        "output_tokens": 196,
+        "total_tokens": 1775
+      },
+      "raw": "tools\\imagegen\\raw\\bld_school_end.png"
+    },
+    {
+      "time": "2026-09-30 02:04:29",
+      "job": "bld_apartment_block_medium_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0233,
+      "actual_usd": 0.01748,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1593,
+        "output_tokens": 158,
+        "total_tokens": 1751
+      },
+      "raw": "tools\\imagegen\\raw\\bld_apartment_block_medium_side.png"
+    },
+    {
+      "time": "2026-09-30 02:04:41",
+      "job": "bld_apartment_block_medium_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.0185,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1577,
+        "output_tokens": 196,
+        "total_tokens": 1773
+      },
+      "raw": "tools\\imagegen\\raw\\bld_apartment_block_medium_end.png"
+    },
+    {
+      "time": "2026-09-30 02:04:56",
+      "job": "bld_apartment_block_large_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0233,
+      "actual_usd": 0.01755,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1601,
+        "output_tokens": 158,
+        "total_tokens": 1759
+      },
+      "raw": "tools\\imagegen\\raw\\bld_apartment_block_large_side.png"
+    },
+    {
+      "time": "2026-09-30 02:05:10",
+      "job": "bld_apartment_block_large_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01856,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1585,
+        "output_tokens": 196,
+        "total_tokens": 1781
+      },
+      "raw": "tools\\imagegen\\raw\\bld_apartment_block_large_end.png"
+    },
+    {
+      "time": "2026-09-30 02:05:24",
+      "job": "bld_roadside_market_structure_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0233,
+      "actual_usd": 0.0175,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1595,
+        "output_tokens": 158,
+        "total_tokens": 1753
+      },
+      "raw": "tools\\imagegen\\raw\\bld_roadside_market_structure_side.png"
+    },
+    {
+      "time": "2026-09-30 02:06:56",
+      "job": "bld_roadside_market_structure_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01851,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1579,
+        "output_tokens": 196,
+        "total_tokens": 1775
+      },
+      "raw": "tools\\imagegen\\raw\\bld_roadside_market_structure_end.png"
+    },
+    {
+      "time": "2026-09-30 02:07:11",
+      "job": "vegetation_sheet_a",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0081,
+      "actual_usd": 0.00592,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 148,
+        "output_tokens": 158,
+        "total_tokens": 306
+      },
+      "raw": "tools\\imagegen\\raw\\vegetation_sheet_a.png"
+    },
+    {
+      "time": "2026-09-30 02:07:23",
+      "job": "passengers_hailing_b",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0081,
+      "actual_usd": 0.00622,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 185,
+        "output_tokens": 158,
+        "total_tokens": 343
+      },
+      "raw": "tools\\imagegen\\raw\\passengers_hailing_b.png"
+    },
+    {
+      "time": "2026-09-30 02:07:37",
+      "job": "okada_rear",
+      "mode": "generate",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0092,
+      "actual_usd": 0.007,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 140,
+        "output_tokens": 196,
+        "total_tokens": 336
+      },
+      "raw": "tools\\imagegen\\raw\\okada_rear.png"
+    },
+    {
+      "time": "2026-09-30 02:22:45",
+      "job": "okada_left_rear_3q",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01122,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 668,
+        "output_tokens": 196,
+        "total_tokens": 864
+      },
+      "raw": "tools\\imagegen\\raw\\okada_left_rear_3q.png"
+    },
+    {
+      "time": "2026-09-30 02:23:00",
+      "job": "okada_right_rear_3q",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01122,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 668,
+        "output_tokens": 196,
+        "total_tokens": 864
+      },
+      "raw": "tools\\imagegen\\raw\\okada_right_rear_3q.png"
+    },
+    {
+      "time": "2026-09-30 02:32:55",
+      "job": "bus_stop_sign",
+      "mode": "generate",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0092,
+      "actual_usd": 0.0069,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 127,
+        "output_tokens": 196,
+        "total_tokens": 323
+      },
+      "raw": "tools\\imagegen\\raw\\bus_stop_sign.png"
+    },
+    {
+      "time": "2026-09-30 02:40:37",
+      "job": "ui_icons_a",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0081,
+      "actual_usd": 0.00577,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 129,
+        "output_tokens": 158,
+        "total_tokens": 287
+      },
+      "raw": "tools\\imagegen\\raw\\ui_icons_a.png"
+    },
+    {
+      "time": "2026-09-30 02:40:52",
+      "job": "ui_icons_b",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0081,
+      "actual_usd": 0.0058,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 133,
+        "output_tokens": 158,
+        "total_tokens": 291
+      },
+      "raw": "tools\\imagegen\\raw\\ui_icons_b.png"
+    },
+    {
+      "time": "2026-09-30 03:04:48",
+      "job": "police_bike_rear",
+      "mode": "generate",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0092,
+      "actual_usd": 0.00706,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 147,
+        "output_tokens": 196,
+        "total_tokens": 343
+      },
+      "raw": "tools\\imagegen\\raw\\police_bike_rear.png"
+    },
+    {
+      "time": "2026-09-30 03:08:14",
+      "job": "police_bike_left_rear_3q",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01198,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 762,
+        "output_tokens": 196,
+        "total_tokens": 958
+      },
+      "raw": "tools\\imagegen\\raw\\police_bike_left_rear_3q.png"
+    },
+    {
+      "time": "2026-09-30 03:08:31",
+      "job": "police_bike_right_rear_3q",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01198,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 762,
+        "output_tokens": 196,
+        "total_tokens": 958
+      },
+      "raw": "tools\\imagegen\\raw\\police_bike_right_rear_3q.png"
+    },
+    {
+      "time": "2026-09-30 03:20:16",
+      "job": "rival_b_rear",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01585,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1246,
+        "output_tokens": 196,
+        "total_tokens": 1442
+      },
+      "raw": "tools\\imagegen\\raw\\rival_b_rear.png"
+    },
+    {
+      "time": "2026-09-30 03:23:06",
+      "job": "rival_b_left_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01545,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1196,
+        "output_tokens": 196,
+        "total_tokens": 1392
+      },
+      "raw": "tools\\imagegen\\raw\\rival_b_left_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 03:23:25",
+      "job": "rival_b_right_rear_slight",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01545,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1196,
+        "output_tokens": 196,
+        "total_tokens": 1392
+      },
+      "raw": "tools\\imagegen\\raw\\rival_b_right_rear_slight.png"
+    },
+    {
+      "time": "2026-09-30 03:23:46",
+      "job": "rival_b_left_rear_3q",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01538,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1187,
+        "output_tokens": 196,
+        "total_tokens": 1383
+      },
+      "raw": "tools\\imagegen\\raw\\rival_b_left_rear_3q.png"
+    },
+    {
+      "time": "2026-09-30 03:24:08",
+      "job": "rival_b_right_rear_3q",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01538,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1187,
+        "output_tokens": 196,
+        "total_tokens": 1383
+      },
+      "raw": "tools\\imagegen\\raw\\rival_b_right_rear_3q.png"
+    },
+    {
+      "time": "2026-09-30 12:21:05",
+      "job": "trotro_mate",
+      "mode": "generate",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0092,
+      "actual_usd": 0.00742,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 192,
+        "output_tokens": 196,
+        "total_tokens": 388
+      },
+      "raw": "tools\\imagegen\\raw\\trotro_mate.png"
+    },
+    {
+      "time": "2026-09-30 12:31:36",
+      "job": "hawkers_sheet",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0081,
+      "actual_usd": 0.00635,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 201,
+        "output_tokens": 158,
+        "total_tokens": 359
+      },
+      "raw": "tools\\imagegen\\raw\\hawkers_sheet.png"
+    },
+    {
+      "time": "2026-09-30 12:31:54",
+      "job": "police_officer_sheet",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0083,
+      "actual_usd": 0.00616,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 177,
+        "output_tokens": 158,
+        "total_tokens": 335
+      },
+      "raw": "tools\\imagegen\\raw\\police_officer_sheet.png"
+    },
+    {
+      "time": "2026-09-30 12:32:14",
+      "job": "market_stalls_sheet",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0083,
+      "actual_usd": 0.00618,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 180,
+        "output_tokens": 158,
+        "total_tokens": 338
+      },
+      "raw": "tools\\imagegen\\raw\\market_stalls_sheet.png"
+    },
+    {
+      "time": "2026-09-30 12:32:34",
+      "job": "roadside_props_a",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0083,
+      "actual_usd": 0.00596,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 152,
+        "output_tokens": 158,
+        "total_tokens": 310
+      },
+      "raw": "tools\\imagegen\\raw\\roadside_props_a.png"
+    },
+    {
+      "time": "2026-09-30 17:22:51",
+      "job": "taxi_rear_clean",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01496,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1135,
+        "output_tokens": 196,
+        "total_tokens": 1331
+      },
+      "raw": "tools\\imagegen\\raw\\taxi_rear_clean.png"
+    },
+    {
+      "time": "2026-09-30 17:23:05",
+      "job": "sedan_rear_clean",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01387,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 999,
+        "output_tokens": 196,
+        "total_tokens": 1195
+      },
+      "raw": "tools\\imagegen\\raw\\sedan_rear_clean.png"
+    },
+    {
+      "time": "2026-09-30 17:23:18",
+      "job": "suv_rear_clean",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01462,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1093,
+        "output_tokens": 196,
+        "total_tokens": 1289
+      },
+      "raw": "tools\\imagegen\\raw\\suv_rear_clean.png"
+    },
+    {
+      "time": "2026-09-30 17:23:31",
+      "job": "pickup_rear_clean",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01414,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1033,
+        "output_tokens": 196,
+        "total_tokens": 1229
+      },
+      "raw": "tools\\imagegen\\raw\\pickup_rear_clean.png"
+    },
+    {
+      "time": "2026-09-30 17:23:44",
+      "job": "van_rear_clean",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01463,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1094,
+        "output_tokens": 196,
+        "total_tokens": 1290
+      },
+      "raw": "tools\\imagegen\\raw\\van_rear_clean.png"
+    },
+    {
+      "time": "2026-09-30 17:23:57",
+      "job": "rival_trotro_rear_clean",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01582,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1243,
+        "output_tokens": 196,
+        "total_tokens": 1439
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_rear_clean.png"
+    },
+    {
+      "time": "2026-09-30 17:24:10",
+      "job": "rival_trotro_b_rear_clean",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01586,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1248,
+        "output_tokens": 196,
+        "total_tokens": 1444
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_b_rear_clean.png"
+    },
+    {
+      "time": "2026-09-30 17:24:26",
+      "job": "hawker_water_scared",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.0109,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 628,
+        "output_tokens": 196,
+        "total_tokens": 824
+      },
+      "raw": "tools\\imagegen\\raw\\hawker_water_scared.png"
+    },
+    {
+      "time": "2026-09-30 17:24:39",
+      "job": "hawker_water_walk",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01061,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 591,
+        "output_tokens": 196,
+        "total_tokens": 787
+      },
+      "raw": "tools\\imagegen\\raw\\hawker_water_walk.png"
+    },
+    {
+      "time": "2026-09-30 17:25:47",
+      "job": "hawker_bread_scared",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.0109,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 628,
+        "output_tokens": 196,
+        "total_tokens": 824
+      },
+      "raw": "tools\\imagegen\\raw\\hawker_bread_scared.png"
+    },
+    {
+      "time": "2026-09-30 17:25:58",
+      "job": "hawker_bread_walk",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.01061,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 591,
+        "output_tokens": 196,
+        "total_tokens": 787
+      },
+      "raw": "tools\\imagegen\\raw\\hawker_bread_walk.png"
+    },
+    {
+      "time": "2026-09-30 17:26:10",
+      "job": "hawker_chips_scared",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.0112,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 665,
+        "output_tokens": 196,
+        "total_tokens": 861
+      },
+      "raw": "tools\\imagegen\\raw\\hawker_chips_scared.png"
+    },
+    {
+      "time": "2026-09-30 17:26:23",
+      "job": "hawker_chips_walk",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.0109,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 628,
+        "output_tokens": 196,
+        "total_tokens": 824
+      },
+      "raw": "tools\\imagegen\\raw\\hawker_chips_walk.png"
+    },
+    {
+      "time": "2026-09-30 17:26:49",
+      "job": "trotro_mate_window",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.02665,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2596,
+        "output_tokens": 196,
+        "total_tokens": 2792
+      },
+      "raw": "tools\\imagegen\\raw\\trotro_mate_window.png"
+    },
+    {
+      "time": "2026-09-30 17:27:02",
+      "job": "pothole_deep",
+      "mode": "generate",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0096,
+      "actual_usd": 0.00758,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 212,
+        "output_tokens": 196,
+        "total_tokens": 408
+      },
+      "raw": "tools\\imagegen\\raw\\pothole_deep.png"
+    },
+    {
+      "time": "2026-09-30 17:28:20",
+      "job": "hawker_chips_scared_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01139,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 689,
+        "output_tokens": 196,
+        "total_tokens": 885
+      },
+      "raw": "tools\\imagegen\\raw\\hawker_chips_scared_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:29:03",
+      "job": "taxi_left_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01568,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1225,
+        "output_tokens": 196,
+        "total_tokens": 1421
+      },
+      "raw": "tools\\imagegen\\raw\\taxi_left_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:29:19",
+      "job": "taxi_left_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0233,
+      "actual_usd": 0.01947,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1841,
+        "output_tokens": 158,
+        "total_tokens": 1999
+      },
+      "raw": "tools\\imagegen\\raw\\taxi_left_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:29:33",
+      "job": "taxi_left_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0253,
+      "actual_usd": 0.01965,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1864,
+        "output_tokens": 158,
+        "total_tokens": 2022
+      },
+      "raw": "tools\\imagegen\\raw\\taxi_left_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:29:49",
+      "job": "taxi_right_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01568,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1225,
+        "output_tokens": 196,
+        "total_tokens": 1421
+      },
+      "raw": "tools\\imagegen\\raw\\taxi_right_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:30:02",
+      "job": "taxi_right_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01947,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1841,
+        "output_tokens": 158,
+        "total_tokens": 1999
+      },
+      "raw": "tools\\imagegen\\raw\\taxi_right_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:30:16",
+      "job": "taxi_right_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01965,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1864,
+        "output_tokens": 158,
+        "total_tokens": 2022
+      },
+      "raw": "tools\\imagegen\\raw\\taxi_right_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:30:30",
+      "job": "sedan_left_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01491,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1129,
+        "output_tokens": 196,
+        "total_tokens": 1325
+      },
+      "raw": "tools\\imagegen\\raw\\sedan_left_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:30:43",
+      "job": "sedan_left_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01844,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1713,
+        "output_tokens": 158,
+        "total_tokens": 1871
+      },
+      "raw": "tools\\imagegen\\raw\\sedan_left_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:30:56",
+      "job": "sedan_left_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01863,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1736,
+        "output_tokens": 158,
+        "total_tokens": 1894
+      },
+      "raw": "tools\\imagegen\\raw\\sedan_left_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:31:10",
+      "job": "sedan_right_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01491,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1129,
+        "output_tokens": 196,
+        "total_tokens": 1325
+      },
+      "raw": "tools\\imagegen\\raw\\sedan_right_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:31:24",
+      "job": "sedan_right_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01844,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1713,
+        "output_tokens": 158,
+        "total_tokens": 1871
+      },
+      "raw": "tools\\imagegen\\raw\\sedan_right_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:31:38",
+      "job": "sedan_right_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01863,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1736,
+        "output_tokens": 158,
+        "total_tokens": 1894
+      },
+      "raw": "tools\\imagegen\\raw\\sedan_right_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:31:53",
+      "job": "suv_left_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01542,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1193,
+        "output_tokens": 196,
+        "total_tokens": 1389
+      },
+      "raw": "tools\\imagegen\\raw\\suv_left_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:32:06",
+      "job": "suv_left_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01947,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1841,
+        "output_tokens": 158,
+        "total_tokens": 1999
+      },
+      "raw": "tools\\imagegen\\raw\\suv_left_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:32:29",
+      "job": "suv_left_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01965,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1864,
+        "output_tokens": 158,
+        "total_tokens": 2022
+      },
+      "raw": "tools\\imagegen\\raw\\suv_left_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:32:44",
+      "job": "suv_right_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01542,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1193,
+        "output_tokens": 196,
+        "total_tokens": 1389
+      },
+      "raw": "tools\\imagegen\\raw\\suv_right_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:33:29",
+      "job": "suv_right_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01947,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1841,
+        "output_tokens": 158,
+        "total_tokens": 1999
+      },
+      "raw": "tools\\imagegen\\raw\\suv_right_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:33:46",
+      "job": "suv_right_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01965,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1864,
+        "output_tokens": 158,
+        "total_tokens": 2022
+      },
+      "raw": "tools\\imagegen\\raw\\suv_right_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:34:00",
+      "job": "pickup_left_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01491,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1129,
+        "output_tokens": 196,
+        "total_tokens": 1325
+      },
+      "raw": "tools\\imagegen\\raw\\pickup_left_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:34:14",
+      "job": "pickup_left_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01844,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1713,
+        "output_tokens": 158,
+        "total_tokens": 1871
+      },
+      "raw": "tools\\imagegen\\raw\\pickup_left_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:34:34",
+      "job": "pickup_left_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01863,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1736,
+        "output_tokens": 158,
+        "total_tokens": 1894
+      },
+      "raw": "tools\\imagegen\\raw\\pickup_left_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:34:48",
+      "job": "pickup_right_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01491,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1129,
+        "output_tokens": 196,
+        "total_tokens": 1325
+      },
+      "raw": "tools\\imagegen\\raw\\pickup_right_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:35:01",
+      "job": "pickup_right_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.0187,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1745,
+        "output_tokens": 158,
+        "total_tokens": 1903
+      },
+      "raw": "tools\\imagegen\\raw\\pickup_right_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:35:16",
+      "job": "pickup_right_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01888,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1768,
+        "output_tokens": 158,
+        "total_tokens": 1926
+      },
+      "raw": "tools\\imagegen\\raw\\pickup_right_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:35:30",
+      "job": "van_left_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01568,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1225,
+        "output_tokens": 196,
+        "total_tokens": 1421
+      },
+      "raw": "tools\\imagegen\\raw\\van_left_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:35:43",
+      "job": "van_left_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0255,
+      "actual_usd": 0.01998,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1905,
+        "output_tokens": 158,
+        "total_tokens": 2063
+      },
+      "raw": "tools\\imagegen\\raw\\van_left_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:36:05",
+      "job": "van_left_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.026,
+      "actual_usd": 0.02016,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1928,
+        "output_tokens": 158,
+        "total_tokens": 2086
+      },
+      "raw": "tools\\imagegen\\raw\\van_left_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:36:20",
+      "job": "van_right_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0262,
+      "actual_usd": 0.01998,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1905,
+        "output_tokens": 158,
+        "total_tokens": 2063
+      },
+      "raw": "tools\\imagegen\\raw\\van_right_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:36:34",
+      "job": "van_right_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0262,
+      "actual_usd": 0.02016,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1928,
+        "output_tokens": 158,
+        "total_tokens": 2086
+      },
+      "raw": "tools\\imagegen\\raw\\van_right_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:36:50",
+      "job": "rival_trotro_left_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01645,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1321,
+        "output_tokens": 196,
+        "total_tokens": 1517
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_left_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:37:03",
+      "job": "rival_trotro_left_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0262,
+      "actual_usd": 0.021,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2033,
+        "output_tokens": 158,
+        "total_tokens": 2191
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_left_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:37:20",
+      "job": "rival_trotro_left_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0273,
+      "actual_usd": 0.02119,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2056,
+        "output_tokens": 158,
+        "total_tokens": 2214
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_left_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:37:38",
+      "job": "rival_trotro_right_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01645,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1321,
+        "output_tokens": 196,
+        "total_tokens": 1517
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_right_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:37:52",
+      "job": "rival_trotro_right_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0275,
+      "actual_usd": 0.02126,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2065,
+        "output_tokens": 158,
+        "total_tokens": 2223
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_right_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:38:06",
+      "job": "rival_trotro_right_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0276,
+      "actual_usd": 0.02144,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2088,
+        "output_tokens": 158,
+        "total_tokens": 2246
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_right_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:38:20",
+      "job": "rival_trotro_b_left_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01645,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1321,
+        "output_tokens": 196,
+        "total_tokens": 1517
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_b_left_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:38:35",
+      "job": "rival_trotro_b_left_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0279,
+      "actual_usd": 0.02203,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2161,
+        "output_tokens": 158,
+        "total_tokens": 2319
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_b_left_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:38:50",
+      "job": "rival_trotro_b_left_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0286,
+      "actual_usd": 0.02221,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2184,
+        "output_tokens": 158,
+        "total_tokens": 2342
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_b_left_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:39:05",
+      "job": "rival_trotro_b_right_rear_slight_v2",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01645,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1321,
+        "output_tokens": 196,
+        "total_tokens": 1517
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_b_right_rear_slight_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:39:20",
+      "job": "rival_trotro_b_right_rear_3q_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0289,
+      "actual_usd": 0.02228,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2193,
+        "output_tokens": 158,
+        "total_tokens": 2351
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_b_right_rear_3q_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:39:34",
+      "job": "rival_trotro_b_right_side_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.029,
+      "actual_usd": 0.02247,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2216,
+        "output_tokens": 158,
+        "total_tokens": 2374
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_b_right_side_v2.png"
+    },
+    {
+      "time": "2026-09-30 17:39:50",
+      "job": "motorbike_left_side",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.0174,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1440,
+        "output_tokens": 196,
+        "total_tokens": 1636
+      },
+      "raw": "tools\\imagegen\\raw\\motorbike_left_side.png"
+    },
+    {
+      "time": "2026-09-30 17:40:04",
+      "job": "motorbike_right_side",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.0174,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1440,
+        "output_tokens": 196,
+        "total_tokens": 1636
+      },
+      "raw": "tools\\imagegen\\raw\\motorbike_right_side.png"
+    },
+    {
+      "time": "2026-09-30 17:40:17",
+      "job": "police_bike_left_side",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01918,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1663,
+        "output_tokens": 196,
+        "total_tokens": 1859
+      },
+      "raw": "tools\\imagegen\\raw\\police_bike_left_side.png"
+    },
+    {
+      "time": "2026-09-30 17:40:32",
+      "job": "police_bike_right_side",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01918,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1663,
+        "output_tokens": 196,
+        "total_tokens": 1859
+      },
+      "raw": "tools\\imagegen\\raw\\police_bike_right_side.png"
+    },
+    {
+      "time": "2026-09-30 17:41:32",
+      "job": "van_right_rear_slight_v3",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01503,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1144,
+        "output_tokens": 196,
+        "total_tokens": 1340
+      },
+      "raw": "tools\\imagegen\\raw\\van_right_rear_slight_v3.png"
+    },
+    {
+      "time": "2026-10-01 00:55:09",
+      "job": "fitter_shop",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0083,
+      "actual_usd": 0.00597,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 154,
+        "output_tokens": 158,
+        "total_tokens": 312
+      },
+      "raw": "tools\\imagegen\\raw\\fitter_shop.png"
+    },
+    {
+      "time": "2026-10-01 00:55:22",
+      "job": "mechanic_wave",
+      "mode": "generate",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0099,
+      "actual_usd": 0.00702,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 142,
+        "output_tokens": 196,
+        "total_tokens": 338
+      },
+      "raw": "tools\\imagegen\\raw\\mechanic_wave.png"
+    },
+    {
+      "time": "2026-10-01 01:39:13",
+      "job": "taxi_left_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01284,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 870,
+        "output_tokens": 196,
+        "total_tokens": 1066
+      },
+      "raw": "tools\\imagegen\\raw\\taxi_left_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:39:36",
+      "job": "taxi_right_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01301,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 891,
+        "output_tokens": 196,
+        "total_tokens": 1087
+      },
+      "raw": "tools\\imagegen\\raw\\taxi_right_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:39:47",
+      "job": "sedan_left_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.0125,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 827,
+        "output_tokens": 196,
+        "total_tokens": 1023
+      },
+      "raw": "tools\\imagegen\\raw\\sedan_left_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:39:59",
+      "job": "sedan_right_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.0125,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 827,
+        "output_tokens": 196,
+        "total_tokens": 1023
+      },
+      "raw": "tools\\imagegen\\raw\\sedan_right_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:40:11",
+      "job": "suv_left_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01301,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 891,
+        "output_tokens": 196,
+        "total_tokens": 1087
+      },
+      "raw": "tools\\imagegen\\raw\\suv_left_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:40:23",
+      "job": "suv_right_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01301,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 891,
+        "output_tokens": 196,
+        "total_tokens": 1087
+      },
+      "raw": "tools\\imagegen\\raw\\suv_right_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:40:36",
+      "job": "pickup_left_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01301,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 891,
+        "output_tokens": 196,
+        "total_tokens": 1087
+      },
+      "raw": "tools\\imagegen\\raw\\pickup_left_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:40:48",
+      "job": "pickup_right_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01301,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 891,
+        "output_tokens": 196,
+        "total_tokens": 1087
+      },
+      "raw": "tools\\imagegen\\raw\\pickup_right_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:40:59",
+      "job": "van_left_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01326,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 923,
+        "output_tokens": 196,
+        "total_tokens": 1119
+      },
+      "raw": "tools\\imagegen\\raw\\van_left_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:41:11",
+      "job": "van_right_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01301,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 891,
+        "output_tokens": 196,
+        "total_tokens": 1087
+      },
+      "raw": "tools\\imagegen\\raw\\van_right_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:41:23",
+      "job": "rival_trotro_left_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01352,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 955,
+        "output_tokens": 196,
+        "total_tokens": 1151
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_left_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:41:34",
+      "job": "rival_trotro_right_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01352,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 955,
+        "output_tokens": 196,
+        "total_tokens": 1151
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_right_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:41:47",
+      "job": "rival_trotro_b_left_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01378,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 987,
+        "output_tokens": 196,
+        "total_tokens": 1183
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_b_left_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:42:00",
+      "job": "rival_trotro_b_right_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01352,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 955,
+        "output_tokens": 196,
+        "total_tokens": 1151
+      },
+      "raw": "tools\\imagegen\\raw\\rival_trotro_b_right_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:42:13",
+      "job": "motorbike_left_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01357,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 961,
+        "output_tokens": 196,
+        "total_tokens": 1157
+      },
+      "raw": "tools\\imagegen\\raw\\motorbike_left_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:42:24",
+      "job": "motorbike_right_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01357,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 961,
+        "output_tokens": 196,
+        "total_tokens": 1157
+      },
+      "raw": "tools\\imagegen\\raw\\motorbike_right_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:42:37",
+      "job": "police_bike_left_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01459,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1089,
+        "output_tokens": 196,
+        "total_tokens": 1285
+      },
+      "raw": "tools\\imagegen\\raw\\police_bike_left_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:42:50",
+      "job": "police_bike_right_rear_3q_high",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01459,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1089,
+        "output_tokens": 196,
+        "total_tokens": 1285
+      },
+      "raw": "tools\\imagegen\\raw\\police_bike_right_rear_3q_high.png"
+    },
+    {
+      "time": "2026-10-01 01:43:02",
+      "job": "taxi_left_rear_3q_high_b",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01301,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 891,
+        "output_tokens": 196,
+        "total_tokens": 1087
+      },
+      "raw": "tools\\imagegen\\raw\\taxi_left_rear_3q_high_b.png"
+    },
+    {
+      "time": "2026-10-01 11:29:04",
+      "job": "cover_portrait_v2",
+      "mode": "edit",
+      "size": "1024x1536",
+      "quality": "medium",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.2,
+      "actual_usd": 0.02151,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1403,
+        "output_tokens": 343,
+        "total_tokens": 1746
+      },
+      "raw": "tools\\imagegen\\raw\\cover_portrait_v2.png"
+    },
+    {
+      "time": "2026-10-01 11:29:28",
+      "job": "cover_landscape_v2",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "medium",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.2,
+      "actual_usd": 0.02112,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1354,
+        "output_tokens": 343,
+        "total_tokens": 1697
+      },
+      "raw": "tools\\imagegen\\raw\\cover_landscape_v2.png"
+    },
+    {
+      "time": "2026-10-01 11:30:05",
+      "job": "cover_portrait_v3",
+      "mode": "edit",
+      "size": "1024x1536",
+      "quality": "medium",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.028,
+      "actual_usd": 0.02371,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1677,
+        "output_tokens": 343,
+        "total_tokens": 2020
+      },
+      "raw": "tools\\imagegen\\raw\\cover_portrait_v3.png"
+    },
+    {
+      "time": "2026-10-01 11:30:22",
+      "job": "cover_landscape_v3",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "medium",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0275,
+      "actual_usd": 0.02363,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1668,
+        "output_tokens": 343,
+        "total_tokens": 2011
+      },
+      "raw": "tools\\imagegen\\raw\\cover_landscape_v3.png"
+    },
+    {
+      "time": "2026-10-01 13:08:18",
+      "job": "bus_shelter",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0083,
+      "actual_usd": 0.00612,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 172,
+        "output_tokens": 158,
+        "total_tokens": 330
+      },
+      "raw": "tools\\imagegen\\raw\\bus_shelter.png"
+    },
+    {
+      "time": "2026-10-01 13:08:32",
+      "job": "fitter_workshop",
+      "mode": "generate",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0083,
+      "actual_usd": 0.00632,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 198,
+        "output_tokens": 158,
+        "total_tokens": 356
+      },
+      "raw": "tools\\imagegen\\raw\\fitter_workshop.png"
+    },
+    {
+      "time": "2026-10-01 13:14:05",
+      "job": "stop_fitter_side",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0292,
+      "actual_usd": 0.0184,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1707,
+        "output_tokens": 158,
+        "total_tokens": 1865
+      },
+      "raw": "tools\\imagegen\\raw\\stop_fitter_side.png"
+    },
+    {
+      "time": "2026-10-01 13:14:20",
+      "job": "stop_fitter_end",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0346,
+      "actual_usd": 0.01918,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1663,
+        "output_tokens": 196,
+        "total_tokens": 1859
+      },
+      "raw": "tools\\imagegen\\raw\\stop_fitter_end.png"
+    },
+    {
+      "time": "2026-10-02 10:39:53",
+      "job": "cover_portrait_v4",
+      "mode": "edit",
+      "size": "2048x3072",
+      "quality": "medium",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.2,
+      "actual_usd": 0.0351,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1403,
+        "output_tokens": 796,
+        "total_tokens": 2199
+      },
+      "raw": "tools\\imagegen\\raw\\cover_portrait_v4.png"
+    },
+    {
+      "time": "2026-10-02 10:41:08",
+      "job": "cover_portrait_v5",
+      "mode": "edit",
+      "size": "2048x3072",
+      "quality": "medium",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0456,
+      "actual_usd": 0.03747,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1699,
+        "output_tokens": 796,
+        "total_tokens": 2495
+      },
+      "raw": "tools\\imagegen\\raw\\cover_portrait_v5.png"
+    },
+    {
+      "time": "2026-10-02 10:41:53",
+      "job": "cover_landscape_v4",
+      "mode": "edit",
+      "size": "2048x1152",
+      "quality": "medium",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.2,
+      "actual_usd": 0.02185,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1355,
+        "output_tokens": 367,
+        "total_tokens": 1722
+      },
+      "raw": "tools\\imagegen\\raw\\cover_landscape_v4.png"
+    },
+    {
+      "time": "2026-10-02 10:43:26",
+      "job": "cover_portrait_patch1",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "medium",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.2,
+      "actual_usd": 0.02219,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1128,
+        "output_tokens": 439,
+        "total_tokens": 1567
+      },
+      "raw": "tools\\imagegen\\raw\\cover_portrait_patch1.png"
+    },
+    {
+      "time": "2026-10-02 10:44:22",
+      "job": "cover_landscape_patch1",
+      "mode": "edit",
+      "size": "1024x1024",
+      "quality": "medium",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0288,
+      "actual_usd": 0.0223,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1141,
+        "output_tokens": 439,
+        "total_tokens": 1580
+      },
+      "raw": "tools\\imagegen\\raw\\cover_landscape_patch1.png"
+    },
+    {
+      "time": "2026-10-02 12:08:23",
+      "job": "trailer_01_child_window",
+      "mode": "edit",
+      "size": "1024x1536",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.04,
+      "actual_usd": 0.01896,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1778,
+        "output_tokens": 158,
+        "total_tokens": 1936
+      },
+      "raw": "tools\\imagegen\\raw\\trailer_01_child_window.png"
+    },
+    {
+      "time": "2026-10-02 12:08:41",
+      "job": "trailer_06_mate_fare",
+      "mode": "edit",
+      "size": "1024x1536",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0246,
+      "actual_usd": 0.02532,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2573,
+        "output_tokens": 158,
+        "total_tokens": 2731
+      },
+      "raw": "tools\\imagegen\\raw\\trailer_06_mate_fare.png"
+    },
+    {
+      "time": "2026-10-02 12:08:59",
+      "job": "trailer_09_rival_mate",
+      "mode": "edit",
+      "size": "1024x1536",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0329,
+      "actual_usd": 0.02674,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2750,
+        "output_tokens": 158,
+        "total_tokens": 2908
+      },
+      "raw": "tools\\imagegen\\raw\\trailer_09_rival_mate.png"
+    },
+    {
+      "time": "2026-10-02 12:09:18",
+      "job": "trailer_11_police_fine",
+      "mode": "edit",
+      "size": "1024x1536",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0348,
+      "actual_usd": 0.03049,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 3219,
+        "output_tokens": 158,
+        "total_tokens": 3377
+      },
+      "raw": "tools\\imagegen\\raw\\trailer_11_police_fine.png"
+    },
+    {
+      "time": "2026-10-02 12:23:45",
+      "job": "trailer_01_child_window_v2",
+      "mode": "edit",
+      "size": "1024x1536",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0396,
+      "actual_usd": 0.01912,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1797,
+        "output_tokens": 158,
+        "total_tokens": 1955
+      },
+      "raw": "tools\\imagegen\\raw\\trailer_01_child_window_v2.png"
+    },
+    {
+      "time": "2026-10-02 12:23:59",
+      "job": "trailer_06_mate_fare_v2",
+      "mode": "edit",
+      "size": "1024x1536",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0396,
+      "actual_usd": 0.02553,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2599,
+        "output_tokens": 158,
+        "total_tokens": 2757
+      },
+      "raw": "tools\\imagegen\\raw\\trailer_06_mate_fare_v2.png"
+    },
+    {
+      "time": "2026-10-02 12:24:12",
+      "job": "trailer_09_rival_mate_v2",
+      "mode": "edit",
+      "size": "1024x1536",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0396,
+      "actual_usd": 0.02692,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 2773,
+        "output_tokens": 158,
+        "total_tokens": 2931
+      },
+      "raw": "tools\\imagegen\\raw\\trailer_09_rival_mate_v2.png"
+    },
+    {
+      "time": "2026-10-02 12:24:26",
+      "job": "trailer_11_police_fine_v2",
+      "mode": "edit",
+      "size": "1024x1536",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0396,
+      "actual_usd": 0.03078,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 3255,
+        "output_tokens": 158,
+        "total_tokens": 3413
+      },
+      "raw": "tools\\imagegen\\raw\\trailer_11_police_fine_v2.png"
+    },
+    {
+      "time": "2026-10-02 15:17:59",
+      "job": "trailer_logo",
+      "mode": "edit",
+      "size": "1536x1024",
+      "quality": "low",
+      "model": "gpt-image-2.5-flare",
+      "estimated_usd": 0.0292,
+      "actual_usd": 0.01478,
+      "status": "ok",
+      "usage_reported": true,
+      "usage": {
+        "input_tokens": 1255,
+        "output_tokens": 158,
+        "total_tokens": 1413
+      },
+      "raw": "tools\\imagegen\\raw\\trailer_logo.png"
+    }
+  ]
+}

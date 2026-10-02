@@ -1,0 +1,24 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/traffic_vehicle.gd" id="1_tv"]
+[ext_resource type="Texture2D" path="res://assets/vehicles/player_trotro/shadow_blob.png" id="2_shadow"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_shadow"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+albedo_color = Color(1, 1, 1, 0.6)
+albedo_texture = ExtResource("2_shadow")
+
+[sub_resource type="QuadMesh" id="QuadMesh_shadow"]
+size = Vector2(1, 1)
+
+[node name="TrafficVehicle" type="Node3D"]
+script = ExtResource("1_tv")
+
+[node name="Shadow" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.05, 0)
+material_override = SubResource("StandardMaterial3D_shadow")
+mesh = SubResource("QuadMesh_shadow")
+
+[node name="Sprite" type="Sprite3D" parent="."]

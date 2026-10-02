@@ -1,0 +1,271 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/environment/curb_concrete.png" id="1_wwida"]
+[ext_resource type="Texture2D" path="res://assets/buildings/compound_house/compound_side_wall.png" id="2_tn3rj"]
+[ext_resource type="Texture2D" path="res://assets/buildings/compound_house/compound_front_facade.png" id="3_sdwt8"]
+[ext_resource type="Texture2D" path="res://assets/buildings/compound_house/compound_porch_card.png" id="4_54din"]
+[ext_resource type="Texture2D" path="res://assets/buildings/compound_house/compound_porch_side.png" id="5_gk46q"]
+[ext_resource type="Texture2D" path="res://assets/buildings/compound_house/compound_roof.png" id="6_sf0wd"]
+[ext_resource type="Texture2D" path="res://assets/buildings/compound_house/compound_boundary_wall.png" id="7_rg4v6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_br7px"]
+cull_mode = 2
+albedo_texture = ExtResource("1_wwida")
+roughness = 0.92
+uv1_scale = Vector3(3, 8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_17oiq"]
+size = Vector3(6.2, 0.25, 17.6)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xe4oh"]
+cull_mode = 2
+albedo_color = Color(0.78, 0.58, 0.2, 1)
+roughness = 0.92
+
+[sub_resource type="BoxMesh" id="BoxMesh_xcs6b"]
+size = Vector3(5.4, 3.6, 16)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2bj7q"]
+cull_mode = 2
+albedo_texture = ExtResource("2_tn3rj")
+roughness = 0.88
+
+[sub_resource type="QuadMesh" id="QuadMesh_k5uce"]
+size = Vector2(16, 3.6)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5twen"]
+cull_mode = 2
+albedo_texture = ExtResource("3_sdwt8")
+roughness = 0.88
+
+[sub_resource type="QuadMesh" id="QuadMesh_dn40u"]
+size = Vector2(5.4, 3.6)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4kflo"]
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("4_54din")
+roughness = 0.85
+
+[sub_resource type="QuadMesh" id="QuadMesh_nw73q"]
+size = Vector2(2.65, 3.6)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dnks6"]
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("5_gk46q")
+roughness = 0.85
+
+[sub_resource type="QuadMesh" id="QuadMesh_yi7wf"]
+size = Vector2(0.63, 3.6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_c46r5"]
+size = Vector3(2.2, 0.16, 0.6)
+
+[sub_resource type="PrismMesh" id="PrismMesh_qwmrt"]
+size = Vector3(5.4, 1.25, 0.15)
+
+[sub_resource type="PrismMesh" id="PrismMesh_xy6q3"]
+size = Vector3(5.4, 1.25, 0.15)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ubay"]
+cull_mode = 2
+albedo_texture = ExtResource("6_sf0wd")
+roughness = 0.75
+uv1_scale = Vector3(14, 4, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_a8r35"]
+size = Vector3(3.4, 0.08, 17.6)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vdb6o"]
+cull_mode = 2
+albedo_color = Color(0.58, 0.22, 0.14, 1)
+roughness = 0.92
+
+[sub_resource type="BoxMesh" id="BoxMesh_7ut4y"]
+size = Vector3(0.28, 0.1, 17.6)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l3h71"]
+cull_mode = 2
+albedo_color = Color(0.24, 0.24, 0.26, 1)
+roughness = 0.85
+
+[sub_resource type="BoxMesh" id="BoxMesh_nkfht"]
+size = Vector3(0.08, 0.16, 17.6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cepj5"]
+size = Vector3(0.22, 1.1, 17.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7c315"]
+cull_mode = 2
+albedo_texture = ExtResource("7_rg4v6")
+roughness = 0.85
+uv1_scale = Vector3(2.5, 1, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_c0nbo"]
+size = Vector2(17.2, 1.1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bmq2a"]
+size = Vector3(0.36, 1.3, 0.36)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nuvb5"]
+cull_mode = 2
+albedo_color = Color(0.72, 0.58, 0.4, 1)
+roughness = 0.9
+
+[sub_resource type="PrismMesh" id="PrismMesh_wwmra"]
+size = Vector3(0.44, 0.18, 0.44)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gf6oc"]
+size = Vector3(0.36, 1.3, 0.36)
+
+[sub_resource type="PrismMesh" id="PrismMesh_vmg3i"]
+size = Vector3(0.44, 0.18, 0.44)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wankf"]
+size = Vector3(0.36, 1.3, 0.36)
+
+[sub_resource type="PrismMesh" id="PrismMesh_u85er"]
+size = Vector3(0.44, 0.18, 0.44)
+
+[sub_resource type="BoxMesh" id="BoxMesh_eaptx"]
+size = Vector3(0.36, 1.3, 0.36)
+
+[sub_resource type="PrismMesh" id="PrismMesh_qhmos"]
+size = Vector3(0.44, 0.18, 0.44)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mu2c2"]
+size = Vector3(0.36, 1.3, 0.36)
+
+[sub_resource type="PrismMesh" id="PrismMesh_gthvi"]
+size = Vector3(0.44, 0.18, 0.44)
+
+[node name="CompoundHouse" type="Node3D" unique_id=1388069433]
+
+[node name="FoundationPlinth" type="MeshInstance3D" parent="." unique_id=916278336]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0.4)
+material_override = SubResource("StandardMaterial3D_br7px")
+mesh = SubResource("BoxMesh_17oiq")
+
+[node name="BuildingCore" type="MeshInstance3D" parent="." unique_id=1568732117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.925, 0)
+material_override = SubResource("StandardMaterial3D_xe4oh")
+mesh = SubResource("BoxMesh_xcs6b")
+
+[node name="RoadsideLongWall" type="MeshInstance3D" parent="." unique_id=997232227]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.72, 1.925, 0)
+material_override = SubResource("StandardMaterial3D_2bj7q")
+mesh = SubResource("QuadMesh_k5uce")
+
+[node name="FrontEndFacade" type="MeshInstance3D" parent="." unique_id=2042340824]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.925, 8.02)
+material_override = SubResource("StandardMaterial3D_5twen")
+mesh = SubResource("QuadMesh_dn40u")
+
+[node name="FrontPorchCard" type="MeshInstance3D" parent="." unique_id=718627134]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.925, 8.65)
+material_override = SubResource("StandardMaterial3D_4kflo")
+mesh = SubResource("QuadMesh_nw73q")
+
+[node name="PorchSideReturn" type="MeshInstance3D" parent="." unique_id=932860303]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.025, 1.925, 8.335)
+material_override = SubResource("StandardMaterial3D_dnks6")
+mesh = SubResource("QuadMesh_yi7wf")
+
+[node name="FrontEntranceStep" type="MeshInstance3D" parent="." unique_id=2004648816]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 0.16, 8.65)
+material_override = SubResource("StandardMaterial3D_br7px")
+mesh = SubResource("BoxMesh_c46r5")
+
+[node name="FrontGable" type="MeshInstance3D" parent="." unique_id=141567953]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 4.35, 8.01)
+material_override = SubResource("StandardMaterial3D_xe4oh")
+mesh = SubResource("PrismMesh_qwmrt")
+
+[node name="RearGable" type="MeshInstance3D" parent="." unique_id=1833299266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.35, -8.01)
+material_override = SubResource("StandardMaterial3D_xe4oh")
+mesh = SubResource("PrismMesh_xy6q3")
+
+[node name="RoofSlope_Roadside" type="MeshInstance3D" parent="." unique_id=1341138555]
+transform = Transform3D(0.92718387, 0.37460658, 0, -0.37460658, 0.92718387, 0, 0, 0, 1, 1.48, 4.38, 0.4)
+material_override = SubResource("StandardMaterial3D_2ubay")
+mesh = SubResource("BoxMesh_a8r35")
+
+[node name="RoofSlope_Back" type="MeshInstance3D" parent="." unique_id=984884676]
+transform = Transform3D(0.92718387, -0.37460658, 0, 0.37460658, 0.92718387, 0, 0, 0, 1, -1.48, 4.38, 0.4)
+material_override = SubResource("StandardMaterial3D_2ubay")
+mesh = SubResource("BoxMesh_a8r35")
+
+[node name="RoofRidge" type="MeshInstance3D" parent="." unique_id=1502747977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0.4)
+material_override = SubResource("StandardMaterial3D_vdb6o")
+mesh = SubResource("BoxMesh_7ut4y")
+
+[node name="EaveGutter_Road" type="MeshInstance3D" parent="." unique_id=584145800]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.02, 3.78, 0.4)
+material_override = SubResource("StandardMaterial3D_l3h71")
+mesh = SubResource("BoxMesh_nkfht")
+
+[node name="CompoundPerimeterWall" type="Node3D" parent="." unique_id=1464335950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2, 0, 0.4)
+
+[node name="PerimeterWallMesh" type="MeshInstance3D" parent="CompoundPerimeterWall" unique_id=796550886]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0)
+material_override = SubResource("StandardMaterial3D_xe4oh")
+mesh = SubResource("BoxMesh_cepj5")
+
+[node name="BreezeBlockDetail" type="MeshInstance3D" parent="CompoundPerimeterWall" unique_id=529917182]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.12, 0.55, 0)
+material_override = SubResource("StandardMaterial3D_7c315")
+mesh = SubResource("QuadMesh_c0nbo")
+
+[node name="WallPillar_-80" type="MeshInstance3D" parent="CompoundPerimeterWall" unique_id=1324614193]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, -8)
+material_override = SubResource("StandardMaterial3D_vdb6o")
+mesh = SubResource("BoxMesh_bmq2a")
+
+[node name="WallPillarCap_-80" type="MeshInstance3D" parent="CompoundPerimeterWall" unique_id=1264889366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.39, -8)
+material_override = SubResource("StandardMaterial3D_nuvb5")
+mesh = SubResource("PrismMesh_wwmra")
+
+[node name="WallPillar_-40" type="MeshInstance3D" parent="CompoundPerimeterWall" unique_id=676210285]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, -4)
+material_override = SubResource("StandardMaterial3D_vdb6o")
+mesh = SubResource("BoxMesh_gf6oc")
+
+[node name="WallPillarCap_-40" type="MeshInstance3D" parent="CompoundPerimeterWall" unique_id=1179134634]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.39, -4)
+material_override = SubResource("StandardMaterial3D_nuvb5")
+mesh = SubResource("PrismMesh_vmg3i")
+
+[node name="WallPillar_0" type="MeshInstance3D" parent="CompoundPerimeterWall" unique_id=150055422]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 0)
+material_override = SubResource("StandardMaterial3D_vdb6o")
+mesh = SubResource("BoxMesh_wankf")
+
+[node name="WallPillarCap_0" type="MeshInstance3D" parent="CompoundPerimeterWall" unique_id=1889342035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.39, 0)
+material_override = SubResource("StandardMaterial3D_nuvb5")
+mesh = SubResource("PrismMesh_u85er")
+
+[node name="WallPillar_40" type="MeshInstance3D" parent="CompoundPerimeterWall" unique_id=1826991506]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 4)
+material_override = SubResource("StandardMaterial3D_vdb6o")
+mesh = SubResource("BoxMesh_eaptx")
+
+[node name="WallPillarCap_40" type="MeshInstance3D" parent="CompoundPerimeterWall" unique_id=1248410310]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.39, 4)
+material_override = SubResource("StandardMaterial3D_nuvb5")
+mesh = SubResource("PrismMesh_qhmos")
+
+[node name="WallPillar_80" type="MeshInstance3D" parent="CompoundPerimeterWall" unique_id=106699742]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 8)
+material_override = SubResource("StandardMaterial3D_vdb6o")
+mesh = SubResource("BoxMesh_mu2c2")
+
+[node name="WallPillarCap_80" type="MeshInstance3D" parent="CompoundPerimeterWall" unique_id=915849672]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.39, 8)
+material_override = SubResource("StandardMaterial3D_nuvb5")
+mesh = SubResource("PrismMesh_gthvi")

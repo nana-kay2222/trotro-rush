@@ -1,0 +1,25 @@
+# Godot 4+ cache (rebuilt automatically when the project is opened)
+.godot/
+/android/
+
+# Exports and packed builds
+build/
+*.pck
+*.wasm
+
+# Large local working files kept out of the repository
+trailer/
+tools/imagegen/raw/
+screenshots/
+
+# Editor / OS clutter
+.claude/
+.DS_Store
+Thumbs.db
+
+# Secrets: API keys must never be committed
+.env
+.env.*
+*.key
+openai_api_key
+tools/imagegen/*.tmp

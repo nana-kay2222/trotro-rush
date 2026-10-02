@@ -1,0 +1,118 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/world.gd" id="1_kpybi"]
+[ext_resource type="Script" path="res://scripts/road_segment.gd" id="2_rseg"]
+[ext_resource type="PackedScene" path="res://scenes/player_trotro.tscn" id="19_8u370"]
+[ext_resource type="Script" path="res://scripts/camera_controller.gd" id="23_eo1xk"]
+[ext_resource type="Script" path="res://scripts/world_streamer.gd" id="24_strm"]
+[ext_resource type="Script" path="res://scripts/traffic_manager.gd" id="25_traf"]
+[ext_resource type="Script" path="res://scripts/hud.gd" id="26_hud"]
+[ext_resource type="Script" path="res://scripts/skyline.gd" id="27_sky"]
+[ext_resource type="Script" path="res://scripts/roadside.gd" id="28_side"]
+[ext_resource type="Script" path="res://scripts/hazard_manager.gd" id="29_haz"]
+[ext_resource type="Script" path="res://scripts/pickup_manager.gd" id="30_pick"]
+[ext_resource type="Script" path="res://scripts/police_manager.gd" id="31_pol"]
+[ext_resource type="Script" path="res://scripts/road_events.gd" id="32_evt"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_18clu"]
+sky_top_color = Color(0.16, 0.46, 0.92, 1)
+sky_horizon_color = Color(0.62, 0.8, 0.95, 1)
+ground_bottom_color = Color(0.4, 0.37, 0.32, 1)
+ground_horizon_color = Color(0.7, 0.78, 0.86, 1)
+
+[sub_resource type="Sky" id="Sky_4wdv8"]
+sky_material = SubResource("ProceduralSkyMaterial_18clu")
+
+[sub_resource type="Environment" id="Environment_d46x8"]
+background_mode = 2
+sky = SubResource("Sky_4wdv8")
+ambient_light_source = 2
+ambient_light_color = Color(0.62, 0.64, 0.72, 1)
+ambient_light_energy = 0.78
+tonemap_mode = 0
+fog_enabled = true
+fog_light_color = Color(0.7, 0.8, 0.92, 1)
+fog_density = 0.0022
+fog_sky_affect = 0.0
+adjustment_enabled = true
+adjustment_brightness = 1.02
+adjustment_contrast = 1.06
+adjustment_saturation = 1.18
+
+[node name="World" type="Node3D"]
+script = ExtResource("1_kpybi")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_d46x8")
+
+[node name="SunLight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.76604444, 0.37782106, -0.5200261, 0, 0.809017, 0.58778524, 0.6427876, -0.4502696, 0.619743, 0, 0, 0)
+light_color = Color(1, 0.93, 0.8, 1)
+light_energy = 1.2
+shadow_enabled = true
+directional_shadow_max_distance = 70.0
+
+[node name="WorldStreamer" type="Node3D" parent="."]
+script = ExtResource("24_strm")
+
+[node name="SegmentA" type="Node3D" parent="WorldStreamer"]
+
+[node name="Road" type="Node3D" parent="WorldStreamer/SegmentA"]
+script = ExtResource("2_rseg")
+
+[node name="Roadside" type="Node3D" parent="WorldStreamer/SegmentA"]
+script = ExtResource("28_side")
+
+[node name="SegmentB" type="Node3D" parent="WorldStreamer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -360)
+
+[node name="Road" type="Node3D" parent="WorldStreamer/SegmentB"]
+script = ExtResource("2_rseg")
+
+[node name="Roadside" type="Node3D" parent="WorldStreamer/SegmentB"]
+script = ExtResource("28_side")
+
+[node name="Skyline" type="MeshInstance3D" parent="."]
+script = ExtResource("27_sky")
+
+[node name="PlayerTrotro" parent="." instance=ExtResource("19_8u370")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15)
+
+[node name="Traffic" type="Node3D" parent="."]
+script = ExtResource("25_traf")
+
+[node name="Hazards" type="Node3D" parent="."]
+script = ExtResource("29_haz")
+
+[node name="Pickups" type="Node3D" parent="."]
+script = ExtResource("30_pick")
+
+[node name="RoadEvents" type="Node3D" parent="."]
+script = ExtResource("32_evt")
+
+[node name="Police" type="Node3D" parent="."]
+script = ExtResource("31_pol")
+
+[node name="CameraRig" type="Node3D" parent="."]
+script = ExtResource("23_eo1xk")
+
+[node name="Camera3D" type="Camera3D" parent="CameraRig"]
+transform = Transform3D(1, 0, 0, 0, 0.9945219, 0.104528464, 0, -0.104528464, 0.9945219, 0, 2.3, 21.2)
+current = true
+keep_aspect = 0
+fov = 64.0
+far = 1500.0
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("26_hud")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="ControlsHUD" type="Label" parent="UI"]
+visible = false
+offset_left = 24.0
+offset_top = 20.0
+offset_right = 24.0
+offset_bottom = 20.0
+text = "TROTRO RUSH
+[A/D] or [Left/Right] Steer"
